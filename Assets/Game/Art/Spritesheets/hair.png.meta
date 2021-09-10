@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: 3ff8170b609e85b40946ebac1d125739
+guid: 6fd3c87e4ef478144a2f2628e21972fd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3873836211216587549
-    second: head-shapes_0
+      213: -3033253052430608597
+    second: hair_0
   - first:
-      213: 8383239353526704505
-    second: head-shapes_1
+      213: 174899437966103339
+    second: hair_1
   - first:
-      213: -8144271124041003225
-    second: head-shapes_2
-  - first:
-      213: -187480268748426502
-    second: head-shapes_3
-  - first:
-      213: -7074088500821807995
-    second: head-shapes_4
+      213: -7427898515998817285
+    second: hair_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -116,106 +110,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: head-shapes_0
+      name: hair_0
       rect:
         serializedVersion: 2
-        x: 119
-        y: 1368
-        width: 670
-        height: 754
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 31
+        y: 1747
+        width: 367
+        height: 343
+      alignment: 9
+      pivot: {x: 0.5082013, y: 0.18003535}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1b1c977281a2c530800000000000000
-      internalID: 3873836211216587549
+      spriteID: b2711007b68b7e5d0800000000000000
+      internalID: -3033253052430608597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: head-shapes_1
+      name: hair_1
       rect:
         serializedVersion: 2
-        x: 850
-        y: 1361
-        width: 574
-        height: 789
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 551
+        y: 1754
+        width: 393
+        height: 155
+      alignment: 9
+      pivot: {x: 0.49999985, y: 0.34078646}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 979d80696cf375470800000000000000
-      internalID: 8383239353526704505
+      spriteID: b239267bc1e5d6200800000000000000
+      internalID: 174899437966103339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: head-shapes_2
+      name: hair_2
       rect:
         serializedVersion: 2
-        x: 1510
-        y: 1445
-        width: 593
-        height: 606
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 1100
+        y: 1740
+        width: 298
+        height: 195
+      alignment: 9
+      pivot: {x: 0.49999958, y: 0.30569598}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72f8019109cb9fe80800000000000000
-      internalID: -8144271124041003225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: head-shapes_3
-      rect:
-        serializedVersion: 2
-        x: 2202
-        y: 1430
-        width: 507
-        height: 644
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af2fada50bfe56df0800000000000000
-      internalID: -187480268748426502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: head-shapes_4
-      rect:
-        serializedVersion: 2
-        x: 2825
-        y: 1407
-        width: 670
-        height: 650
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58c27d61df9c3dd90800000000000000
-      internalID: -7074088500821807995
+      spriteID: bf34d3687adcae890800000000000000
+      internalID: -7427898515998817285
       vertices: []
       indices: 
       edges: []
