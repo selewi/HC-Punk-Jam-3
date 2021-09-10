@@ -1,50 +1,51 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using NaughtyAttributes;
 
-public class PortraitController : MonoBehaviour
+namespace HCPJ3
 {
-    [SerializeField] private Sprite[] _backgroundCollection = { };
-    [SerializeField] private Sprite[] _faceShapeCollection = { };
-    [SerializeField] private Sprite[] _hairCollection = { };
-    [SerializeField] private Sprite[] _eyesCollection = { };
-    [SerializeField] private Sprite[] _noseCollection = { };
-    [SerializeField] private Sprite[] _mouthCollection = { };
-
-    private PortraitDisplayable _displayable;
-
-    private void Awake ()
+    public class PortraitController : MonoBehaviour
     {
-        Initialize ();
-    }
+        [SerializeField] private Sprite[] _backgroundCollection = { };
+        [SerializeField] private Sprite[] _faceShapeCollection = { };
+        [SerializeField] private Sprite[] _hairCollection = { };
+        [SerializeField] private Sprite[] _eyesCollection = { };
+        [SerializeField] private Sprite[] _noseCollection = { };
+        [SerializeField] private Sprite[] _mouthCollection = { };
 
-    private void Initialize ()
-    {
-        _displayable = GetComponentInChildren<PortraitDisplayable> ();
-    }
+        private PortraitDisplayable _displayable;
 
-    [Button ("Randomize test")]
-    public void Randomize ()
-    {
-        if (_displayable == null)
+        private void Awake ()
         {
             Initialize ();
         }
 
-        _displayable.SetCharacterSprites (
-            GetRandomSprite (_backgroundCollection),
-            GetRandomSprite (_faceShapeCollection),
-            GetRandomSprite (_hairCollection),
-            GetRandomSprite (_eyesCollection),
-            GetRandomSprite (_noseCollection),
-            GetRandomSprite (_mouthCollection)
-        ); ;
-    }
+        private void Initialize ()
+        {
+            _displayable = GetComponentInChildren<PortraitDisplayable> ();
+        }
 
-    private Sprite GetRandomSprite (Sprite[] spriteArray)
-    {
-        return spriteArray[Random.Range (0, spriteArray.Length)];
-    }
+        [Button ("Randomize test")]
+        public void Randomize ()
+        {
+            if (_displayable == null)
+            {
+                Initialize ();
+            }
 
+            _displayable.SetCharacterSprites (
+                GetRandomSprite (_backgroundCollection),
+                GetRandomSprite (_faceShapeCollection),
+                GetRandomSprite (_hairCollection),
+                GetRandomSprite (_eyesCollection),
+                GetRandomSprite (_noseCollection),
+                GetRandomSprite (_mouthCollection)
+            ); ;
+        }
+
+        private Sprite GetRandomSprite (Sprite[] spriteArray)
+        {
+            return spriteArray[Random.Range (0, spriteArray.Length)];
+        }
+
+    }
 }
