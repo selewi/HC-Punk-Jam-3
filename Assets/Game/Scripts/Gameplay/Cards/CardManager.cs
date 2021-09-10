@@ -1,11 +1,12 @@
 ﻿using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace HCPJ3
 {
     public class CardManager : MonoBehaviour
     {
-        private enum Direction
+        public enum Direction
         {
             None,
             Left,
@@ -33,6 +34,8 @@ namespace HCPJ3
 
         private int _currentCardIndex;
         private bool _dragging;
+
+        public UnityEvent<CardReleaseEventInfo> onCardRelease = null;
 
         public void Initialize()
         {
@@ -88,9 +91,13 @@ namespace HCPJ3
             }
             else
             {
-                // TODO Handle scoring
-
-                DisplayNewCard();
+                onCardRelease?.Invoke (
+                    new CardReleaseEventInfo(
+                        cardIsCop: false, // TODO: check card controller to see if card is a dirty cop
+                        swipeDirection: dir
+                    )
+                );
+                DisplayNewCard ();
             }
         }
 
@@ -109,6 +116,33 @@ namespace HCPJ3
             }
 
             return Direction.None;
+        }
+
+        public struct CardReleaseEventInfo
+        {
+            private bool _cardIsCop;
+            private Direction _swipeDirection;
+
+            public bool CardIsCop => _cardIsCop;
+            public bool SwipeIsCorrect
+            {
+                get
+                {
+                    if (CardIsCop)
+                    {
+                        return _swipeDirection == Direction.Left;
+                    } else
+                    {
+                        return _swipeDirection == Direction.Right;
+                    }
+                }
+            }
+
+            public CardReleaseEventInfo (bool cardIsCop, Direction swipeDirection)
+            {
+                _cardIsCop = cardIsCop;
+                _swipeDirection = swipeDirection;
+            }
         }
     }
 }
