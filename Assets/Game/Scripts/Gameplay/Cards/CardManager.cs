@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using NaughtyAttributes;
+using UnityEngine;
 
 namespace HCPJ3
 {
@@ -12,6 +13,9 @@ namespace HCPJ3
         }
 
         [SerializeField]
+        private Camera _camera;
+
+        [SerializeField]
         private CardController[] _cards;
 
         [SerializeField]
@@ -22,17 +26,13 @@ namespace HCPJ3
 
         [SerializeField]
         private int _borderSize = 500;
-        
+
+        [Range(0, 100)]
+        [SerializeField]
+        private int _copperChance;
+
         private int _currentCardIndex;
-
         private bool _dragging;
-
-        private Camera _camera;
-
-        private void Awake()
-        {
-            _camera = Camera.main;
-        }
 
         public void Initialize()
         {
@@ -42,32 +42,26 @@ namespace HCPJ3
 
         private void DisplayNewCard()
         {
-            MoveBack(_cards[_currentCardIndex].transform);
+            CardController currentCard = _cards[_currentCardIndex];
+            currentCard.Randomize(Random.Range(0, 101) <= _copperChance);
+            MoveBack(currentCard);
             
             _currentCardIndex = (_currentCardIndex + 1) % _cards.Length;
-
-            Card card = GenerateCard();
-            CardController controller = _cards[_currentCardIndex]; 
-            controller.Initialize(card);
             
-            MoveFront(controller.transform);
+            currentCard = _cards[_currentCardIndex]; 
+            MoveFront(currentCard);
         }
 
-        private void MoveFront(Transform controller)
+        private void MoveFront(CardController card)
         {
-            controller.SetParent(_frontContainer);
-            controller.localPosition = Vector3.zero;
+            card.transform.SetParent(_frontContainer);
+            card.transform.localPosition = Vector3.zero;
         }
 
-        private void MoveBack(Transform controller)
+        private void MoveBack(CardController card)
         {
-            controller.SetParent(_backgroundContainer);
-            controller.localPosition = Vector3.zero;
-        }
-
-        private Card GenerateCard()
-        {
-            return null;
+            card.transform.SetParent(_backgroundContainer);
+            card.transform.localPosition = Vector3.zero;
         }
 
         private void Update()
@@ -85,12 +79,12 @@ namespace HCPJ3
             }
         }
 
-        private void HandleRelease(CardController controller)
+        private void HandleRelease(CardController card)
         {
-            Direction dir = GetSwipeDirection(controller);
+            Direction dir = GetSwipeDirection(card);
             if (dir == Direction.None)
             {
-                controller.transform.position = _frontContainer.position;
+                card.transform.position = _frontContainer.position;
             }
             else
             {
@@ -100,9 +94,9 @@ namespace HCPJ3
             }
         }
 
-        private Direction GetSwipeDirection(CardController controller)
+        private Direction GetSwipeDirection(CardController card)
         {
-            Vector2 screenPos = _camera.WorldToScreenPoint(controller.transform.position);
+            Vector2 screenPos = _camera.WorldToScreenPoint(card.transform.position);
             
             if (screenPos.x <= _borderSize)
             {
