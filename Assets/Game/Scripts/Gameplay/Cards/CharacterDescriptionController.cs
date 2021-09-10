@@ -47,10 +47,10 @@ namespace HCPJ3
             {
                 if (i == copQuoteIndex)
                 {
-                    description += string.Format ("\n{0}", GetRandomQuote (_copQuotes));
+                    description += string.Format ("{0}\n", GetRandomQuote (_copQuotes));
                 } else
                 {
-                    description += string.Format ("\n{0}", GetRandomQuote (Random.value > .5f ? _punkQuotes : _mixedQuotes));
+                    description += string.Format ("{0}\n", GetRandomQuote (Random.value > .5f ? _punkQuotes : _mixedQuotes));
                 }
             }
 
