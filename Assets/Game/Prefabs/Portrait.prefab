@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 8383239353526704505, guid: 3ff8170b609e85b40946ebac1d125739, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -266,7 +266,9 @@ MonoBehaviour:
   _backgroundCollection:
   - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   _faceShapeCollection:
-  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 3873836211216587549, guid: 3ff8170b609e85b40946ebac1d125739, type: 3}
+  - {fileID: 8383239353526704505, guid: 3ff8170b609e85b40946ebac1d125739, type: 3}
+  - {fileID: -8144271124041003225, guid: 3ff8170b609e85b40946ebac1d125739, type: 3}
   _hairCollection:
   - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   _eyesCollection:
