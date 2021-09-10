@@ -4,26 +4,16 @@ namespace HCPJ3
 {
     public class CardController : MonoBehaviour
     {
-        private Camera _camera;
-        private Vector3 _origin;
+        private Card _card;
 
-        private void Awake()
+        public void Initialize(Card card)
         {
-            _camera = Camera.main;
-            _origin = transform.position;
+            _card = card;
+            Refresh();
         }
 
-        private void Update()
+        private void Refresh()
         {
-            if (Input.GetMouseButton(0))
-            {
-                Vector2 position = _camera.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = position;
-            }
-            else
-            {
-                transform.position = _origin;
-            }
         }
     }
 }
