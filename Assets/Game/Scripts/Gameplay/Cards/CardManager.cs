@@ -1,6 +1,7 @@
 ﻿using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
+using DG.Tweening;
 
 namespace HCPJ3
 {
@@ -65,6 +66,7 @@ namespace HCPJ3
         {
             card.transform.SetParent(_backgroundContainer);
             card.transform.localPosition = Vector3.zero;
+            card.transform.localRotation = Quaternion.identity;
         }
 
         private void Update()
@@ -73,7 +75,8 @@ namespace HCPJ3
             {
                 _dragging = true;
                 Vector2 position = _camera.ScreenToWorldPoint(Input.mousePosition);
-                _cards[_currentCardIndex].transform.position = position;
+                _cards[_currentCardIndex].transform.position = Vector3.right * Mathf.Lerp (_cards[_currentCardIndex].transform.position.x, position.x, Time.deltaTime * 10.0f);
+                _cards[_currentCardIndex].transform.rotation = Quaternion.Lerp (_cards[_currentCardIndex].transform.rotation, Quaternion.Euler (0, 0, -position.x * 2), Time.deltaTime * 5.0f);
             }
             else if (_dragging)
             {
@@ -87,17 +90,21 @@ namespace HCPJ3
             Direction dir = GetSwipeDirection(card);
             if (dir == Direction.None)
             {
-                card.transform.position = _frontContainer.position;
+                card.transform.DOMoveX (_frontContainer.position.x, 0.25f);
+                card.transform.DORotate (Vector3.zero, 0.25f);
             }
             else
             {
+                _cards[_currentCardIndex].transform
+                    .DOMoveX (dir == Direction.Right ? 10 : -10, 0.25f)
+                    .OnComplete (DisplayNewCard);
+
                 onCardRelease?.Invoke (
                     new CardReleaseEventInfo(
                         cardIsCop: card.IsCop,
                         swipeDirection: dir
                     )
                 );
-                DisplayNewCard ();
             }
         }
 

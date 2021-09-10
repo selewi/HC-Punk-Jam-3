@@ -29,7 +29,7 @@ Transform:
   m_Children:
   - {fileID: 1073435396315948710}
   m_Father: {fileID: 8509713952669103357}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3120819337519786776
 GameObject:
@@ -59,9 +59,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8929211148839945874}
-  - {fileID: 8551697480590126345}
   - {fileID: 8197773160352456717}
+  - {fileID: 8551697480590126345}
+  - {fileID: 8929211148839945874}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -149,7 +149,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -259,7 +259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4667783177680850339, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4667783177680850339, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
       propertyPath: m_LocalPosition.x
