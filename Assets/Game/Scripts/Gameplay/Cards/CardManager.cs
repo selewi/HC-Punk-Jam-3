@@ -93,7 +93,7 @@ namespace HCPJ3
             {
                 onCardRelease?.Invoke (
                     new CardReleaseEventInfo(
-                        cardIsCop: false, // TODO: check card controller to see if card is a dirty cop
+                        cardIsCop: card.IsCop,
                         swipeDirection: dir
                     )
                 );

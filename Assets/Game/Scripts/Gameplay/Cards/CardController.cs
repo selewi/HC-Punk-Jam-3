@@ -10,8 +10,11 @@ namespace HCPJ3
         [SerializeField]
         private CharacterDescriptionController _description;
 
+        public bool IsCop { get; private set; }
+
         public void Randomize(bool isDirtyCop)
         {
+            IsCop = isDirtyCop;
             _portrait.Randomize();
             _description.Randomize(isDirtyCop);
         }
