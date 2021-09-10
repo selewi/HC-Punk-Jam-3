@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10613b1bab45a941bc570bd40f2fa3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _punkQuoteChance: 0.25
   _punkQuotes:
   - PunkQuote_0
   - PunkQuote_1

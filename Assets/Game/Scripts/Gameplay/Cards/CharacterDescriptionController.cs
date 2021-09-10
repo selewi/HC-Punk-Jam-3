@@ -5,6 +5,7 @@ namespace HCPJ3
 {
     public class CharacterDescriptionController : MonoBehaviour
     {
+        [SerializeField] [Range (0, 1)] private float _punkQuoteChance = 0.5f;
         [SerializeField] private string[] _punkQuotes = { };
         [SerializeField] private string[] _copQuotes = { };
         [SerializeField] private string[] _mixedQuotes = { };
@@ -33,6 +34,11 @@ namespace HCPJ3
             Randomize (isCop: false);
         }
 
+        public void SetPunkQuoteChance (int newValue)
+        {
+            _punkQuoteChance = Mathf.Clamp (newValue, 0, 1);
+        }
+
         public void Randomize (bool isCop)
         {
             if (_displayable == null)
@@ -50,7 +56,7 @@ namespace HCPJ3
                     description += string.Format ("{0}\n", GetRandomQuote (_copQuotes));
                 } else
                 {
-                    description += string.Format ("{0}\n", GetRandomQuote (Random.value > .5f ? _punkQuotes : _mixedQuotes));
+                    description += string.Format ("{0}\n", GetRandomQuote (Random.value < _punkQuoteChance ? _punkQuotes : _mixedQuotes));
                 }
             }
 
