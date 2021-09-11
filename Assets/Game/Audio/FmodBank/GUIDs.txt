@@ -11,6 +11,7 @@
 {4df41fef-9ad0-49a7-adff-570fc826ca93} event:/SFX/Amb/Amb_City
 {375a7018-9094-48a1-8512-1eff2ffe7b07} event:/SFX/UI/Card_Pick
 {93a85b03-4d90-4e80-981b-e807e7b20d91} event:/SFX/UI/Card_Release
+{65849912-fa04-43bd-a190-c02f8f22bda9} event:/SFX/UI/Card_Swipable
 {33ef51e4-b45a-4534-b8e5-c79f4aed7ebc} event:/SFX/UI/MouseOver
 {c78577bc-ba6e-4744-9c83-8917ef63a0a3} event:/SFX/UI/Swipe_Cop_True
 {21c9c592-251c-4fd6-a291-97f33426db81} event:/SFX/UI/Swipe_Cop_Wrong
