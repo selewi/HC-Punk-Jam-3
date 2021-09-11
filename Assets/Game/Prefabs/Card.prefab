@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8509713952669103357}
   - component: {fileID: 4976884073838919066}
+  - component: {fileID: 430611943166509614}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -79,6 +80,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _portrait: {fileID: 8551697480590126346}
   _description: {fileID: 59614088118613539}
+--- !u!210 &430611943166509614
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3120819337519786776}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &5857618789104170414
 GameObject:
   m_ObjectHideFlags: 0

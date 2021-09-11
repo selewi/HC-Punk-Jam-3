@@ -21,12 +21,6 @@ namespace HCPJ3
         private CardController[] _cards;
 
         [SerializeField]
-        private Transform _backgroundContainer;
-
-        [SerializeField]
-        private Transform _frontContainer;
-
-        [SerializeField]
         private int _borderSize = 500;
 
         [Range(0, 100)]
@@ -41,7 +35,11 @@ namespace HCPJ3
         public void Initialize()
         {
             _currentCardIndex = 0;
-            DisplayNewCard();
+        }
+
+        private void Start ()
+        {
+            DisplayNewCard ();
         }
 
         private void DisplayNewCard()
@@ -58,15 +56,15 @@ namespace HCPJ3
 
         private void MoveFront(CardController card)
         {
-            card.transform.SetParent(_frontContainer);
             card.transform.localPosition = Vector3.zero;
+            card.SetSortingOrder (1);
         }
 
         private void MoveBack(CardController card)
         {
-            card.transform.SetParent(_backgroundContainer);
             card.transform.localPosition = Vector3.zero;
             card.transform.localRotation = Quaternion.identity;
+            card.SetSortingOrder (-1);
         }
 
         private void Update()
@@ -90,7 +88,7 @@ namespace HCPJ3
             Direction dir = GetSwipeDirection(card);
             if (dir == Direction.None)
             {
-                card.transform.DOMoveX (_frontContainer.position.x, 0.25f);
+                card.transform.DOMoveX (0, 0.25f);
                 card.transform.DORotate (Vector3.zero, 0.25f);
             }
             else
