@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: -7922922943154702516
     second: phone-backgrounds_2
+  - first:
+      213: -3725765335163927533
+    second: phone-backgrounds_3
+  - first:
+      213: 2589189697239996849
+    second: phone-backgrounds_4
+  - first:
+      213: 4795410313577824996
+    second: phone-backgrounds_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,12 +122,12 @@ TextureImporter:
       name: phone-backgrounds_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 28
-        width: 1248
-        height: 2104
+        x: 0
+        y: 1080
+        width: 1035
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +143,12 @@ TextureImporter:
       name: phone-backgrounds_1
       rect:
         serializedVersion: 2
-        x: 1298
-        y: 28
-        width: 1247
-        height: 2104
+        x: 0
+        y: 0
+        width: 1035
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +164,12 @@ TextureImporter:
       name: phone-backgrounds_2
       rect:
         serializedVersion: 2
-        x: 2571
-        y: 28
-        width: 1248
-        height: 2104
+        x: 1035
+        y: 1080
+        width: 1037
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,6 +177,69 @@ TextureImporter:
       bones: []
       spriteID: c47b8768f8f1c0290800000000000000
       internalID: -7922922943154702516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone-backgrounds_3
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 0
+        width: 1037
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3140719ea2c6b4cc0800000000000000
+      internalID: -3725765335163927533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone-backgrounds_4
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 0
+        width: 1040
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b95710cf46aee320800000000000000
+      internalID: 2589189697239996849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone-backgrounds_5
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 1080
+        width: 1040
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e20d05e548bc8240800000000000000
+      internalID: 4795410313577824996
       vertices: []
       indices: 
       edges: []
