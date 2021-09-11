@@ -1,4 +1,5 @@
 ﻿using System;
+using HCPJ3.Tools;
 using NaughtyAttributes;
 using UnityEngine;
 using Direction = HCPJ3.CardManager.Direction;
@@ -19,6 +20,11 @@ namespace HCPJ3
         [SerializeField]
         private Color _positiveColor = Color.green;
 
+        [SerializeField]
+        private GameEvent _cardSwipeable;
+
+        private Direction _direction = Direction.None;
+
         public void SetVisible(bool visible)
         {
             _spriteRenderer.enabled = visible;
@@ -26,6 +32,11 @@ namespace HCPJ3
 
         public void SetDirection(Direction direction)
         {
+            if (direction != Direction.None && direction != _direction)
+            {
+                _cardSwipeable.Raise();
+            }
+
             switch (direction)
             {
                 case Direction.Left:
@@ -39,6 +50,8 @@ namespace HCPJ3
                     break;
                 default: throw new ArgumentOutOfRangeException(nameof(direction));
             }
+
+            _direction = direction;
         }
 
         #region Editor

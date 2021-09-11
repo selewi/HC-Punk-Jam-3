@@ -14,11 +14,15 @@ namespace HCPJ3
         [SerializeField]
         private CardOutline _outline;
 
+        [SerializeField]
+        private SwipeTextController _swipeTextController;
+
         private SortingGroup _sortingGroup;
 
         public bool IsCop { get; private set; }
 
         public CardOutline Outline => _outline;
+        public SwipeTextController SwipeTextController => _swipeTextController;
 
         private void Awake ()
         {
@@ -32,6 +36,7 @@ namespace HCPJ3
             _portrait.Randomize();
             _description.Randomize(isDirtyCop);
             _outline.SetDirection(CardManager.Direction.None);
+            _swipeTextController.SetVisibility (0);
         }
 
         public void SetSortingOrder (int newSortingOrder)

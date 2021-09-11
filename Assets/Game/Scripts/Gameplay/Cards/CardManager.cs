@@ -47,13 +47,13 @@ namespace HCPJ3
         public void Initialize()
         {
             _currentCardIndex = 0;
+            RandomizeAllCards ();
             DisplayNewCard ();
         }
 
         private void Update()
         {
             if (!_gameplayManager.IsRunning) return;
-
 
             if (Input.GetMouseButton(0))
             {
@@ -70,6 +70,8 @@ namespace HCPJ3
                 Vector2 position = _camera.ScreenToWorldPoint(Input.mousePosition);
                 card.transform.position = Vector3.right * Mathf.Lerp (card.transform.position.x, position.x, Time.deltaTime * 10.0f);
                 card.transform.rotation = Quaternion.Lerp (card.transform.rotation, Quaternion.Euler (0, 0, -position.x * 2), Time.deltaTime * 5.0f);
+                card.SwipeTextController.SetVisibility (Mathf.Abs(card.transform.position.x)); // using card transform position to get smooth transition
+                card.SwipeTextController.UpdateText (GetSwipeDirection (card) == Direction.Left);
             }
             else if (_dragging)
             {
@@ -95,6 +97,14 @@ namespace HCPJ3
             
             currentCard = _cards[_currentCardIndex]; 
             MoveFront(currentCard);
+        }
+
+        private void RandomizeAllCards ()
+        {
+            foreach (var card in _cards)
+            {
+                card.Randomize (Random.Range (0, 101) <= _copperChance);
+            }
         }
 
         private static void MoveFront(CardController card)
