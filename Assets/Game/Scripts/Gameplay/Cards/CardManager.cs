@@ -13,11 +13,15 @@ namespace HCPJ3
             Right
         }
 
-        [SerializeField]
-        private Camera _camera;
 
         [SerializeField]
         private CardController[] _cards;
+
+        [SerializeField]
+        private GameplayManager _gameplayManager;
+
+        [SerializeField]
+        private Camera _camera;
 
         [SerializeField]
         private int _borderSize = 500;
@@ -34,11 +38,25 @@ namespace HCPJ3
         public void Initialize()
         {
             _currentCardIndex = 0;
+            DisplayNewCard ();
         }
 
-        private void Start ()
+        private void Update()
         {
-            DisplayNewCard ();
+            if (!_gameplayManager.IsRunning) return;
+
+            if (Input.GetMouseButton(0))
+            {
+                _dragging = true;
+                Vector2 position = _camera.ScreenToWorldPoint(Input.mousePosition);
+                _cards[_currentCardIndex].transform.position = Vector3.right * Mathf.Lerp (_cards[_currentCardIndex].transform.position.x, position.x, Time.deltaTime * 10.0f);
+                _cards[_currentCardIndex].transform.rotation = Quaternion.Lerp (_cards[_currentCardIndex].transform.rotation, Quaternion.Euler (0, 0, -position.x * 2), Time.deltaTime * 5.0f);
+            }
+            else if (_dragging)
+            {
+                _dragging = false;
+                HandleRelease(_cards[_currentCardIndex]);
+            }
         }
 
         private void DisplayNewCard()
@@ -64,22 +82,6 @@ namespace HCPJ3
             card.transform.localPosition = Vector3.zero;
             card.transform.localRotation = Quaternion.identity;
             card.SetSortingOrder (-1);
-        }
-
-        private void Update()
-        {
-            if (Input.GetMouseButton(0))
-            {
-                _dragging = true;
-                Vector2 position = _camera.ScreenToWorldPoint(Input.mousePosition);
-                _cards[_currentCardIndex].transform.position = Vector3.right * Mathf.Lerp (_cards[_currentCardIndex].transform.position.x, position.x, Time.deltaTime * 10.0f);
-                _cards[_currentCardIndex].transform.rotation = Quaternion.Lerp (_cards[_currentCardIndex].transform.rotation, Quaternion.Euler (0, 0, -position.x * 2), Time.deltaTime * 5.0f);
-            }
-            else if (_dragging)
-            {
-                _dragging = false;
-                HandleRelease(_cards[_currentCardIndex]);
-            }
         }
 
         private void HandleRelease(CardController card)

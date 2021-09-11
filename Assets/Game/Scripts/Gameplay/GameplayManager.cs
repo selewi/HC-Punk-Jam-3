@@ -15,6 +15,8 @@ namespace HCPJ3
         [Label("UI Manager")]
         private UIManager _uiManager;
 
+        public bool IsRunning { get; private set; }
+
         private void Awake()
         {
             StartGame();
@@ -32,6 +34,7 @@ namespace HCPJ3
 
         private void GameOver()
         {
+            IsRunning = false;
             _uiManager.GameOver();
         }
 
@@ -40,6 +43,7 @@ namespace HCPJ3
             _cardManager.Initialize();
             _scoreManager.Initialize();
             _uiManager.Initialize();
+            IsRunning = true;
         }
 
         private void HandleCardManagerCardRelease (CardManager.CardReleaseEventInfo eventInfo)
