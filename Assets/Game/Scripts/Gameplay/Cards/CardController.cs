@@ -33,7 +33,7 @@ namespace HCPJ3
         public void Randomize(bool isDirtyCop)
         {
             IsCop = isDirtyCop;
-            _portrait.Randomize();
+            _portrait.Randomize(isDirtyCop);
             _description.Randomize(isDirtyCop);
             _outline.SetDirection(CardManager.Direction.None);
             _swipeTextController.SetVisibility (0);
