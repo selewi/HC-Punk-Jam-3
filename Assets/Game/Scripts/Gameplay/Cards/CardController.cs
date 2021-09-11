@@ -37,7 +37,7 @@ namespace HCPJ3
             Outline.SetDirection(CardManager.Direction.None);
             Outline.SetVisible(false);
             scaleTween.Complete ();
-            transform.DOScale(Vector3.one, 0.1f);
+            scaleTween = transform.DOScale(Vector3.one, 0.1f);
         }
 
         public void Randomize(bool isDirtyCop)
@@ -56,6 +56,7 @@ namespace HCPJ3
 
         public void AnimateOnPick()
         {
+            scaleTween.Complete ();
             scaleTween = transform.DOScale(new Vector3(1.2f, 1.2f, 1), 0.25f);
         }
     }
