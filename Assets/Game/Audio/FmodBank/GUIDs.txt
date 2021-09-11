@@ -3,11 +3,12 @@
 {fb743dbe-3ffd-4737-89f4-a6b2e067f616} bus:/
 {5b34b88c-43fe-4768-889f-2029ecdd543a} bus:/MASTER
 {8212b0ba-9601-434e-a83a-2a8705722d83} bus:/MASTER/MUSIC
+{84b6361b-5e03-477d-aa9b-4b9016efa0c7} bus:/MASTER/MUSIC/SideChained
 {e6d53070-67ea-40af-ad8c-4578e74f9120} bus:/MASTER/SFX
 {2a162388-2f54-4706-a610-baf836a821e7} bus:/MASTER/SFX/Amb
 {ec107113-779e-423a-b4d8-9b42a9a39bce} bus:/MASTER/SFX/UI
-{3f86e5d4-8931-4d9c-b23e-5b97c5b50e7c} event:/Music/Music-02_Background
 {bd2834d6-ae00-48b5-9c15-361ac8794eb6} event:/Music/Music_01_TitleScreen
+{3f86e5d4-8931-4d9c-b23e-5b97c5b50e7c} event:/Music/Song01
 {4df41fef-9ad0-49a7-adff-570fc826ca93} event:/SFX/Amb/Amb_City
 {4459811f-0973-4215-bef8-02756f9648fd} event:/SFX/UI/Busted
 {375a7018-9094-48a1-8512-1eff2ffe7b07} event:/SFX/UI/Card_Pick
@@ -19,3 +20,4 @@
 {50260adc-f0d7-48b0-b2ef-95169e3cc194} event:/SFX/UI/Swipe_Punk_True
 {5cbbcb8f-bc6a-4a56-8905-4bb7bdc910a7} event:/SFX/UI/Swipe_Punk_Wrong
 {ead141c1-11ca-40cb-ba28-dc881914d704} event:/TestEvent
+{74c5f1c4-c10f-4062-9a59-c87850bc84b8} parameter:/Points
