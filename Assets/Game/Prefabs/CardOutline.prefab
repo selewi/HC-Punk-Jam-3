@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2438635901671884474}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.073, z: 0}
   m_LocalScale: {x: 3.824866, y: 6.401384, z: 3.6957533}
   m_Children: []
@@ -40,7 +40,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2438635901671884474}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 9045659528784575067}
-  _defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 1}
   _negativeColor: {r: 0.754717, g: 0, b: 0, a: 1}
-  _positiveColor: {r: 0, g: 0.5283019, b: 0, a: 1}
+  _positiveColor: {r: 0.59922737, g: 1, b: 0.4575472, a: 1}
   _cardSwipeable: {fileID: 11400000, guid: 1a50f89bc267d3f44b62766376565900, type: 2}

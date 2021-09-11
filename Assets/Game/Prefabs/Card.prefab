@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _valueTMP: {fileID: 1496910224711244778}
-  _copBustedColor: {r: 0.7529412, g: 0, b: 0, a: 1}
-  _legitPunkColor: {r: 0, g: 0.5294118, b: 0, a: 1}
+  _copBustedColor: {r: 1, g: 0.24056602, b: 0.24056602, a: 1}
+  _legitPunkColor: {r: 0.59922737, g: 1, b: 0.4575472, a: 1}
   _visibilityOffset: 1.15
 --- !u!1 &2703639567889173356
 GameObject:
@@ -745,6 +745,26 @@ PrefabInstance:
       propertyPath: m_text
       value: Ray MacKaye
       objectReference: {fileID: 0}
+    - target: {fileID: 5133770265928072773, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
+      propertyPath: m_fontSize
+      value: 7.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133770265928072773, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133770265928072773, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370881877040352975, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.5991422
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370881877040352975, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.561
+      objectReference: {fileID: 0}
     - target: {fileID: 6961561342161120632, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
       propertyPath: m_Name
       value: CharacterDescription
@@ -833,12 +853,28 @@ PrefabInstance:
       value: CardOutline
       objectReference: {fileID: 0}
     - target: {fileID: 4304183293063072789, guid: fd0acffdfa6727745b221e1a9c9eb8c5, type: 3}
-      propertyPath: _hideInDefaultPosition
+      propertyPath: _defaultColor.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 9045659528784575067, guid: fd0acffdfa6727745b221e1a9c9eb8c5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
+    - target: {fileID: 4304183293063072789, guid: fd0acffdfa6727745b221e1a9c9eb8c5, type: 3}
+      propertyPath: _defaultColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304183293063072789, guid: fd0acffdfa6727745b221e1a9c9eb8c5, type: 3}
+      propertyPath: _defaultColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304183293063072789, guid: fd0acffdfa6727745b221e1a9c9eb8c5, type: 3}
+      propertyPath: _negativeColor.b
+      value: 0.24056602
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304183293063072789, guid: fd0acffdfa6727745b221e1a9c9eb8c5, type: 3}
+      propertyPath: _negativeColor.g
+      value: 0.24056602
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304183293063072789, guid: fd0acffdfa6727745b221e1a9c9eb8c5, type: 3}
+      propertyPath: _negativeColor.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd0acffdfa6727745b221e1a9c9eb8c5, type: 3}
