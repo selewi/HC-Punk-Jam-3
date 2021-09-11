@@ -354,6 +354,7 @@ MonoBehaviour:
   _noseSpriteRenderer: {fileID: 9215242915417276434}
   _mouthSpriteRenderer: {fileID: 9215242915531715813}
   _bodySpriteRenderer: {fileID: 4437974162274373515}
+  _animator: {fileID: 7505093846441317257}
 --- !u!1 &9215242914750089494
 GameObject:
   m_ObjectHideFlags: 0

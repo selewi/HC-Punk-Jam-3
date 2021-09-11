@@ -33,6 +33,7 @@ namespace HCPJ3
                 Initialize ();
             }
 
+            _displayable.RandomizeAnimationStart ();
             _displayable.SetCharacterSprites (
                 GetRandomSprite (_backgroundCollection),
                 GetRandomSprite (_faceShapeCollection),
