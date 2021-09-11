@@ -11,13 +11,19 @@ namespace HCPJ3
         [SerializeField]
         private CharacterDescriptionController _description;
 
+        [SerializeField]
+        private CardOutline _outline;
+
         private SortingGroup _sortingGroup;
 
         public bool IsCop { get; private set; }
 
+        public CardOutline Outline => _outline;
+
         private void Awake ()
         {
             TryGetComponent (out _sortingGroup);
+            Outline.SetVisible(false);
         }
 
         public void Randomize(bool isDirtyCop)
@@ -25,6 +31,7 @@ namespace HCPJ3
             IsCop = isDirtyCop;
             _portrait.Randomize();
             _description.Randomize(isDirtyCop);
+            _outline.SetDirection(CardManager.Direction.None);
         }
 
         public void SetSortingOrder (int newSortingOrder)

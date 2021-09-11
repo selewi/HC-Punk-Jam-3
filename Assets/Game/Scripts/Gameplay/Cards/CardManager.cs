@@ -54,24 +54,35 @@ namespace HCPJ3
         {
             if (!_gameplayManager.IsRunning) return;
 
+
             if (Input.GetMouseButton(0))
             {
+                CardController card = _cards[_currentCardIndex];
+                
                 // Card just been picked up
                 if (!_dragging)
                 {
                     _cardSelected.Raise();
+                    card.Outline.SetVisible(true);
                 }
 
                 _dragging = true;
                 Vector2 position = _camera.ScreenToWorldPoint(Input.mousePosition);
-                _cards[_currentCardIndex].transform.position = Vector3.right * Mathf.Lerp (_cards[_currentCardIndex].transform.position.x, position.x, Time.deltaTime * 10.0f);
-                _cards[_currentCardIndex].transform.rotation = Quaternion.Lerp (_cards[_currentCardIndex].transform.rotation, Quaternion.Euler (0, 0, -position.x * 2), Time.deltaTime * 5.0f);
+                card.transform.position = Vector3.right * Mathf.Lerp (card.transform.position.x, position.x, Time.deltaTime * 10.0f);
+                card.transform.rotation = Quaternion.Lerp (card.transform.rotation, Quaternion.Euler (0, 0, -position.x * 2), Time.deltaTime * 5.0f);
             }
             else if (_dragging)
             {
                 _dragging = false;
                 HandleRelease(_cards[_currentCardIndex]);
             }
+
+            RefreshCard(_cards[_currentCardIndex]);
+        }
+
+        private void RefreshCard(CardController card)
+        {
+            card.Outline.SetDirection(GetSwipeDirection(card));
         }
 
         private void DisplayNewCard()
@@ -86,13 +97,13 @@ namespace HCPJ3
             MoveFront(currentCard);
         }
 
-        private void MoveFront(CardController card)
+        private static void MoveFront(CardController card)
         {
             card.transform.localPosition = Vector3.zero;
             card.SetSortingOrder (1);
         }
 
-        private void MoveBack(CardController card)
+        private static void MoveBack(CardController card)
         {
             card.transform.localPosition = Vector3.zero;
             card.transform.localRotation = Quaternion.identity;
@@ -106,6 +117,9 @@ namespace HCPJ3
             {
                 card.transform.DOMoveX (0, 0.25f);
                 card.transform.DORotate (Vector3.zero, 0.25f);
+                
+                card.Outline.SetDirection(Direction.None);
+                card.Outline.SetVisible(false);
              
                 _cardReleased.Raise();
             }
