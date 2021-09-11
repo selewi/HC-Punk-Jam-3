@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _valueTMP: {fileID: 8207245974239634626}
+  _positiveColor: {r: 1, g: 1, b: 1, a: 1}
+  _negativeColor: {r: 0.7529412, g: 0, b: 0, a: 1}
 --- !u!1 &8207245974239634628
 GameObject:
   m_ObjectHideFlags: 0

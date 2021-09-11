@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 using NaughtyAttributes;
 
 namespace HCPJ3
@@ -32,6 +33,7 @@ namespace HCPJ3
 
         public void HandleCopFound ()
         {
+            _displayable.AnimateFind();
             AddScore (_copFoundScoreGiven);
         }
 
@@ -42,11 +44,13 @@ namespace HCPJ3
 
         public void HandlePunkFound ()
         {
+            _displayable.AnimateFind();
             AddScore (_punkFoundScoreGiven);
         }
 
         public void HandlePunkMiss ()
         {
+            _displayable.AnimateMiss();
             AddScore (_punkMissScoreGiven);
         }
     }
