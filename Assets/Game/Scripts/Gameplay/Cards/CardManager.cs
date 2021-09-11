@@ -152,12 +152,12 @@ namespace HCPJ3
         {
             Vector2 screenPos = _camera.WorldToScreenPoint(card.transform.position);
             
-            if (screenPos.x <= _borderSize)
+            if (screenPos.x <= (Screen.width / 2) - _borderSize)
             {
                 return Direction.Left;
             }
             
-            if (screenPos.x > Screen.width - _borderSize)
+            if (screenPos.x > (Screen.width / 2) + _borderSize)
             {
                 return Direction.Right;
             }

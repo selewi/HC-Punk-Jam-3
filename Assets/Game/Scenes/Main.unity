@@ -610,6 +610,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1318365919}
     - target: {fileID: 1352480893733703615, guid: 6117c745d36b9f640bd4eb418f3c4d42, type: 3}
+      propertyPath: _borderSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352480893733703615, guid: 6117c745d36b9f640bd4eb418f3c4d42, type: 3}
       propertyPath: _gameplayManager
       value: 
       objectReference: {fileID: 446444117}
