@@ -21,7 +21,7 @@ namespace HCPJ3
 
         public void SetVisibility (float value)
         {
-            _valueTMP.color = Color.Lerp (Color.clear, _targetColor, (value - _visibilityOffset));
+            _valueTMP.color = Color.Lerp (Color.clear, _targetColor, ((value - _visibilityOffset) * 2));
         }
     }
 }
