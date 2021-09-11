@@ -29,14 +29,20 @@ namespace HCPJ3
         public void AnimateMiss()
         {
             transform.DOPunchRotation(new Vector3(0, 0, 20f), 0.5f);
+            
             _valueTMP.DOColor(_negativeColor, 0.2f).OnComplete(() => {
                 _valueTMP.DOColor(Color.white, 0.2f);
+            });
+            
+            _valueTMP.transform.DOScale(new Vector3(0.5f, 0.5f, 1), 0.2f).OnComplete(() => {
+                _valueTMP.transform.DOScale(Vector3.one, 0.2f);
             });
         }
 
         public void AnimateFind()
         {
             transform.DOPunchScale(new Vector3(1, 1, 0), 0.5f);
+            
             _valueTMP.DOColor(_positiveColor, 0.2f).OnComplete(() => {
                 _valueTMP.DOColor(Color.white, 0.2f);
             });

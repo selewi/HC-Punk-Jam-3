@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 using UnityEngine.Rendering;
 
 namespace HCPJ3
@@ -30,6 +31,13 @@ namespace HCPJ3
             Outline.SetVisible(false);
         }
 
+        public void SetDefaultVisualState()
+        {
+            Outline.SetDirection(CardManager.Direction.None);
+            Outline.SetVisible(false);
+            transform.DOScale(Vector3.one, 0.1f);
+        }
+
         public void Randomize(bool isDirtyCop)
         {
             IsCop = isDirtyCop;
@@ -42,6 +50,11 @@ namespace HCPJ3
         public void SetSortingOrder (int newSortingOrder)
         {
             _sortingGroup.sortingOrder = newSortingOrder;
+        }
+
+        public void AnimateOnPick()
+        {
+            transform.DOScale(new Vector3(1.2f, 1.2f, 1), 0.25f);
         }
     }
 }
