@@ -47,7 +47,7 @@ namespace HCPJ3
         public void Initialize()
         {
             _currentCardIndex = 0;
-            RandomizeAllCards ();
+            InitializeAllCards ();
             DisplayNewCard ();
         }
 
@@ -62,8 +62,7 @@ namespace HCPJ3
                 // Card just been picked up
                 if (!_dragging)
                 {
-                    _cardSelected.Raise();
-                    card.Outline.SetVisible(true);
+                    PickCard(card);
                 }
 
                 _dragging = true;
@@ -80,6 +79,13 @@ namespace HCPJ3
             }
 
             RefreshCard(_cards[_currentCardIndex]);
+        }
+
+        private void PickCard(CardController card)
+        {
+            _cardSelected.Raise();
+            card.Outline.SetVisible(true);
+            card.AnimateOnPick();
         }
 
         private void RefreshCard(CardController card)
@@ -99,10 +105,11 @@ namespace HCPJ3
             MoveFront(currentCard);
         }
 
-        private void RandomizeAllCards ()
+        private void InitializeAllCards ()
         {
             foreach (var card in _cards)
             {
+                card.SetDefaultVisualState();
                 card.Randomize (Random.Range (0, 101) <= _copperChance);
             }
         }
@@ -128,9 +135,6 @@ namespace HCPJ3
                 card.transform.DOMoveX (0, 0.25f);
                 card.transform.DORotate (Vector3.zero, 0.25f);
                 
-                card.Outline.SetDirection(Direction.None);
-                card.Outline.SetVisible(false);
-             
                 _cardReleased.Raise();
             }
             else
@@ -146,6 +150,8 @@ namespace HCPJ3
                     )
                 );
             }
+
+            card.SetDefaultVisualState();
         }
 
         private Direction GetSwipeDirection(CardController card)
