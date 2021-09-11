@@ -187,6 +187,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3702902722956310641}
     m_Modifications:
+    - target: {fileID: 95081786806692723, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064300510962516763, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064300510962516763, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064300510962516763, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064300510962516763, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064300510962516763, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064300510962516763, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2645697926413432825, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -275,18 +303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOver
       objectReference: {fileID: 0}
-    - target: {fileID: 2645697926413432826, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8186294359969379574, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 4574c86e16deff642818332938c8fadf, type: 2}
-    - target: {fileID: 8186294359969379574, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
-      propertyPath: m_fontStyle
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8186294359969379574, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
       propertyPath: m_sharedMaterial
       value: 
