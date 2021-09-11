@@ -57,7 +57,7 @@ namespace HCPJ3
         public void AnimateOnPick()
         {
             scaleTween.Complete ();
-            scaleTween = transform.DOScale(new Vector3(1.2f, 1.2f, 1), 0.25f);
+            scaleTween = transform.DOScale(new Vector3(1.1f, 1.1f, 1), 0.25f);
         }
     }
 }
