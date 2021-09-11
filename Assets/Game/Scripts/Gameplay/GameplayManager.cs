@@ -1,4 +1,4 @@
-﻿using System;
+﻿using NaughtyAttributes;
 using UnityEngine;
 
 namespace HCPJ3
@@ -11,10 +11,13 @@ namespace HCPJ3
         [SerializeField]
         private ScoreManager _scoreManager;
 
+        [SerializeField]
+        [Label("UI Manager")]
+        private UIManager _uiManager;
+
         private void Awake()
         {
-            _cardManager.Initialize();
-            _scoreManager.Initialize();
+            StartGame();
         }
 
         private void Start ()
@@ -27,6 +30,18 @@ namespace HCPJ3
             _cardManager.onCardRelease.RemoveListener (HandleCardManagerCardRelease);
         }
 
+        private void GameOver()
+        {
+            _uiManager.GameOver();
+        }
+
+        public void StartGame()
+        {
+            _cardManager.Initialize();
+            _scoreManager.Initialize();
+            _uiManager.Initialize();
+        }
+
         private void HandleCardManagerCardRelease (CardManager.CardReleaseEventInfo eventInfo)
         {
             if (eventInfo.CardIsCop)
@@ -36,7 +51,7 @@ namespace HCPJ3
                     _scoreManager.HandleCopFound ();
                 } else
                 {
-                    _scoreManager.HandleCopMiss ();
+                    GameOver();
                 }
             } else
             {
