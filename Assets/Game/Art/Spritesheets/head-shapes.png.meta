@@ -119,10 +119,10 @@ TextureImporter:
       name: head-shapes_0
       rect:
         serializedVersion: 2
-        x: 119
-        y: 1368
-        width: 670
-        height: 754
+        x: 41
+        y: 1642
+        width: 499
+        height: 501
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,90 +132,6 @@ TextureImporter:
       bones: []
       spriteID: d1b1c977281a2c530800000000000000
       internalID: 3873836211216587549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: head-shapes_1
-      rect:
-        serializedVersion: 2
-        x: 850
-        y: 1361
-        width: 574
-        height: 789
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 979d80696cf375470800000000000000
-      internalID: 8383239353526704505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: head-shapes_2
-      rect:
-        serializedVersion: 2
-        x: 1510
-        y: 1445
-        width: 593
-        height: 606
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72f8019109cb9fe80800000000000000
-      internalID: -8144271124041003225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: head-shapes_3
-      rect:
-        serializedVersion: 2
-        x: 2202
-        y: 1430
-        width: 507
-        height: 644
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af2fada50bfe56df0800000000000000
-      internalID: -187480268748426502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: head-shapes_4
-      rect:
-        serializedVersion: 2
-        x: 2825
-        y: 1407
-        width: 670
-        height: 650
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58c27d61df9c3dd90800000000000000
-      internalID: -7074088500821807995
       vertices: []
       indices: 
       edges: []
