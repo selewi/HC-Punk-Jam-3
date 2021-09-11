@@ -134,7 +134,7 @@ namespace HCPJ3
             {
                 card.transform.DOMoveX (0, 0.25f);
                 card.transform.DORotate (Vector3.zero, 0.25f);
-                
+                card.SwipeTextController.SetVisibility (0);
                 _cardReleased.Raise();
             }
             else
