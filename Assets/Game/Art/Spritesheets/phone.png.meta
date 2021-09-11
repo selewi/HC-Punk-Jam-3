@@ -113,10 +113,10 @@ TextureImporter:
       name: phone_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4
-        width: 1052
-        height: 2156
+        x: 50
+        y: 59
+        width: 1121
+        height: 2062
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: phone_1
       rect:
         serializedVersion: 2
-        x: 2164
+        x: 1302
         y: 72
-        width: 1606
-        height: 1059
+        width: 1232
+        height: 1660
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: phone_2
       rect:
         serializedVersion: 2
-        x: 1126
-        y: 74
-        width: 571
-        height: 544
+        x: 2697
+        y: 144
+        width: 362
+        height: 1492
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
