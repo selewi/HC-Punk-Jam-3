@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 3ff8170b609e85b40946ebac1d125739
+guid: 78aad1fbd0f746646b1b95018bdc7ce9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3873836211216587549
-    second: head-shapes_0
+      213: -8817426130257391540
+    second: eyes_0
   - first:
-      213: 8383239353526704505
-    second: head-shapes_1
+      213: 3060230111996817670
+    second: eyes_1
   - first:
-      213: -8144271124041003225
-    second: head-shapes_2
+      213: -7553300288962703749
+    second: eyes_2
   - first:
-      213: -187480268748426502
-    second: head-shapes_3
+      213: 6526169181366970619
+    second: eyes_3
   - first:
-      213: -7074088500821807995
-    second: head-shapes_4
+      213: -4003314775230925824
+    second: eyes_4
+  - first:
+      213: -60545194262561565
+    second: eyes_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -116,22 +119,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: head-shapes_0
+      name: eyes_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 1642
-        width: 499
-        height: 501
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 44
+        y: 1947
+        width: 375
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1b1c977281a2c530800000000000000
-      internalID: 3873836211216587549
+      spriteID: c40d2c8b6a532a580800000000000000
+      internalID: -8817426130257391540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1730
+        width: 348
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6013684b21f187a20800000000000000
+      internalID: 3060230111996817670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1522
+        width: 341
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ec58208694d2790800000000000000
+      internalID: -7553300288962703749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes_3
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1308
+        width: 358
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8ea771b4c919a50800000000000000
+      internalID: 6526169181366970619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1057
+        width: 366
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004b9422c6e5178c0800000000000000
+      internalID: -4003314775230925824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes_5
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 946
+        width: 311
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec7f137776e82ff0800000000000000
+      internalID: -60545194262561565
       vertices: []
       indices: 
       edges: []
