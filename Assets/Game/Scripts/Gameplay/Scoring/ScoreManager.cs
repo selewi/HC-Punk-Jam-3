@@ -15,6 +15,7 @@ namespace HCPJ3
 
         public void Initialize ()
         {
+            _currentScore = 0;
             _displayable = GetComponentInChildren<ScoreDisplayable> ();
         }
 
