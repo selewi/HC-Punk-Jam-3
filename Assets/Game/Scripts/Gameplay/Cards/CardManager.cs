@@ -71,7 +71,7 @@ namespace HCPJ3
                 card.transform.position = Vector3.right * Mathf.Lerp (card.transform.position.x, position.x, Time.deltaTime * 10.0f);
                 card.transform.rotation = Quaternion.Lerp (card.transform.rotation, Quaternion.Euler (0, 0, -position.x * 2), Time.deltaTime * 5.0f);
                 card.SwipeTextController.SetVisibility (Mathf.Abs(card.transform.position.x)); // using card transform position to get smooth transition
-                card.SwipeTextController.UpdateText (GetSwipeDirection (card) == Direction.Left);
+                card.SwipeTextController.UpdateText (card.transform.position.x < 0);
             }
             else if (_dragging)
             {
