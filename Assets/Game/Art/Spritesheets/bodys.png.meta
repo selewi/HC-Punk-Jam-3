@@ -17,6 +17,15 @@ TextureImporter:
   - first:
       213: 1551455278211136728
     second: bodys_4
+  - first:
+      213: 4418856110396473073
+    second: bodys_5
+  - first:
+      213: -7885187435159256165
+    second: bodys_6
+  - first:
+      213: -1870194401273405907
+    second: bodys_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,8 +130,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1946
         y: 1790
-        width: 449
-        height: 330
+        width: 447
+        height: 363
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,10 +149,10 @@ TextureImporter:
       name: bodys_1
       rect:
         serializedVersion: 2
-        x: 2427
+        x: 2425
         y: 1805
-        width: 585
-        height: 305
+        width: 582
+        height: 350
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,7 +173,7 @@ TextureImporter:
         x: 3083
         y: 1803
         width: 677
-        height: 334
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,6 +225,69 @@ TextureImporter:
       bones: []
       spriteID: 8dcfda60b50e78510800000000000000
       internalID: 1551455278211136728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bodys_5
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 1394
+        width: 448
+        height: 341
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fefeb5683ee25d30800000000000000
+      internalID: 4418856110396473073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bodys_6
+      rect:
+        serializedVersion: 2
+        x: 2497
+        y: 1358
+        width: 466
+        height: 435
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9385f32ecf229290800000000000000
+      internalID: -7885187435159256165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bodys_7
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 1373
+        width: 738
+        height: 415
+      alignment: 9
+      pivot: {x: 0.33284637, y: -0.0002567889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e9c2bc91cbb06e0800000000000000
+      internalID: -1870194401273405907
       vertices: []
       indices: 
       edges: []
