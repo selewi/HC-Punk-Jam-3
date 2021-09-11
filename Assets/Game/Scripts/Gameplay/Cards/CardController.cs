@@ -19,6 +19,7 @@ namespace HCPJ3
         private SwipeTextController _swipeTextController;
 
         private SortingGroup _sortingGroup;
+        private Tween scaleTween;
 
         public bool IsCop { get; private set; }
 
@@ -35,6 +36,7 @@ namespace HCPJ3
         {
             Outline.SetDirection(CardManager.Direction.None);
             Outline.SetVisible(false);
+            scaleTween.Complete ();
             transform.DOScale(Vector3.one, 0.1f);
         }
 
@@ -54,7 +56,7 @@ namespace HCPJ3
 
         public void AnimateOnPick()
         {
-            transform.DOScale(new Vector3(1.2f, 1.2f, 1), 0.25f);
+            scaleTween = transform.DOScale(new Vector3(1.2f, 1.2f, 1), 0.25f);
         }
     }
 }
