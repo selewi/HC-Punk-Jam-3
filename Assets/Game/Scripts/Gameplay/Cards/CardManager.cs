@@ -55,7 +55,6 @@ namespace HCPJ3
         {
             if (!_gameplayManager.IsRunning) return;
 
-
             if (Input.GetMouseButton(0))
             {
                 CardController card = _cards[_currentCardIndex];
