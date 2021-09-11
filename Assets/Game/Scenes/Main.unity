@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 780263577}
   - component: {fileID: 780263578}
   m_Layer: 0
-  m_Name: phone_0 (2)
+  m_Name: deco2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 1306992218}
   - component: {fileID: 1306992219}
   m_Layer: 0
-  m_Name: phone_0 (1)
+  m_Name: deco1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
