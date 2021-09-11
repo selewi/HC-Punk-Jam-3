@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: -199198260758886689
     second: noses_0
+  - first:
+      213: -3697807694926323452
+    second: noses_1
+  - first:
+      213: -4228599984819426096
+    second: noses_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,8 +117,8 @@ TextureImporter:
         y: 1920
         width: 83
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6104784, y: 0.50539726}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -120,6 +126,48 @@ TextureImporter:
       bones: []
       spriteID: fd6479bbc3e4c3df0800000000000000
       internalID: -199198260758886689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noses_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1664
+        width: 132
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401e5384e7fbeacc0800000000000000
+      internalID: -3697807694926323452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noses_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1942
+        width: 130
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcad97c7bef055c0800000000000000
+      internalID: -4228599984819426096
       vertices: []
       indices: 
       edges: []
