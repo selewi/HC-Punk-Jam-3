@@ -2,6 +2,7 @@
 using HCPJ3.Tools;
 using NaughtyAttributes;
 using UnityEngine;
+using DG.Tweening;
 using Direction = HCPJ3.CardManager.Direction;
 
 namespace HCPJ3
@@ -40,13 +41,13 @@ namespace HCPJ3
             switch (direction)
             {
                 case Direction.Left:
-                    _spriteRenderer.color = _negativeColor;
+                    _spriteRenderer.DOColor (_negativeColor, .25f);
                     break;
                 case Direction.Right:
-                    _spriteRenderer.color = _positiveColor;
+                    _spriteRenderer.DOColor (_positiveColor, .25f);
                     break;
                 case Direction.None:
-                    _spriteRenderer.color = _defaultColor;
+                    _spriteRenderer.DOColor (_defaultColor, .25f);
                     break;
                 default: throw new ArgumentOutOfRangeException(nameof(direction));
             }

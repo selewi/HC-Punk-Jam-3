@@ -47,6 +47,7 @@ MonoBehaviour:
   _valueTMP: {fileID: 1496910224711244778}
   _copBustedColor: {r: 1, g: 0, b: 0, a: 1}
   _legitPunkColor: {r: 0, g: 1, b: 0, a: 1}
+  _visibilityOffset: 1.15
 --- !u!1 &2703639567889173356
 GameObject:
   m_ObjectHideFlags: 0

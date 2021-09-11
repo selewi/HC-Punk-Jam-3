@@ -9,8 +9,8 @@ namespace HCPJ3
         [Space]
         [SerializeField] private Color _copBustedColor = Color.red;
         [SerializeField] private Color _legitPunkColor = Color.green;
+        [SerializeField] private float _visibilityOffset = 0.5f;
 
-        private float _visibilityOffset = 0.5f;
         private Color _targetColor = Color.white;
 
         public void SetText (string newText, bool isCop)
