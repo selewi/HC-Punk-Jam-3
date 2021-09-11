@@ -17,3 +17,4 @@
 {21c9c592-251c-4fd6-a291-97f33426db81} event:/SFX/UI/Swipe_Cop_Wrong
 {50260adc-f0d7-48b0-b2ef-95169e3cc194} event:/SFX/UI/Swipe_Punk_True
 {5cbbcb8f-bc6a-4a56-8905-4bb7bdc910a7} event:/SFX/UI/Swipe_Punk_Wrong
+{ead141c1-11ca-40cb-ba28-dc881914d704} event:/TestEvent
