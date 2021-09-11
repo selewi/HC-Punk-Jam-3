@@ -11,6 +11,7 @@ namespace HCPJ3
         [SerializeField] private Sprite[] _eyesCollection = { };
         [SerializeField] private Sprite[] _noseCollection = { };
         [SerializeField] private Sprite[] _mouthCollection = { };
+        [SerializeField] private Sprite[] _bodyCollection = { };
 
         private PortraitDisplayable _displayable;
 
@@ -38,7 +39,8 @@ namespace HCPJ3
                 GetRandomSprite (_hairCollection),
                 GetRandomSprite (_eyesCollection),
                 GetRandomSprite (_noseCollection),
-                GetRandomSprite (_mouthCollection)
+                GetRandomSprite (_mouthCollection),
+                GetRandomSprite (_bodyCollection)
             ); ;
         }
 

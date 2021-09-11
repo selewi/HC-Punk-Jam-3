@@ -10,8 +10,9 @@ namespace HCPJ3
         [SerializeField] private SpriteRenderer _eyesSpriteRenderer = null;
         [SerializeField] private SpriteRenderer _noseSpriteRenderer = null;
         [SerializeField] private SpriteRenderer _mouthSpriteRenderer = null;
+        [SerializeField] private SpriteRenderer _bodySpriteRenderer = null;
 
-        public void SetCharacterSprites (Sprite backgroundSprite, Sprite faceShapeSprite, Sprite hairSprite, Sprite eyesSprite, Sprite noseSprite, Sprite mouthSprite)
+        public void SetCharacterSprites (Sprite backgroundSprite, Sprite faceShapeSprite, Sprite hairSprite, Sprite eyesSprite, Sprite noseSprite, Sprite mouthSprite, Sprite bodySprite)
         {
             _backgroundSpriteRenderer.sprite = backgroundSprite;
             _faceShapeSpriteRenderer.sprite = faceShapeSprite;
@@ -19,7 +20,7 @@ namespace HCPJ3
             _eyesSpriteRenderer.sprite = eyesSprite;
             _noseSpriteRenderer.sprite = noseSprite;
             _mouthSpriteRenderer.sprite = mouthSprite;
+            _bodySpriteRenderer.sprite = bodySprite;
         }
-
     }
 }
