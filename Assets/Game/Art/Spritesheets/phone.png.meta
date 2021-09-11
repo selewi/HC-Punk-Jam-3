@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 6778424840077107658
     second: phone_1
+  - first:
+      213: 345920178342225779
+    second: phone_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -144,6 +147,27 @@ TextureImporter:
       bones: []
       spriteID: ac1ea797a7dc11e50800000000000000
       internalID: 6778424840077107658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_2
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 74
+        width: 571
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3776ab6c194fcc400800000000000000
+      internalID: 345920178342225779
       vertices: []
       indices: 
       edges: []
