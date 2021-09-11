@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8207245973319282434}
   - component: {fileID: 8207245973319282433}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Displayable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 8207245974239634627}
   - component: {fileID: 8207245974239634625}
   - component: {fileID: 8207245974239634626}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ValueTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8207245975050114286}
   - component: {fileID: 8207245975050114287}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ScoreManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
