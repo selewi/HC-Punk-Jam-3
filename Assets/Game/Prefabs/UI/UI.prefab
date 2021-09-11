@@ -275,6 +275,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOver
       objectReference: {fileID: 0}
+    - target: {fileID: 2645697926413432826, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186294359969379574, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4574c86e16deff642818332938c8fadf, type: 2}
+    - target: {fileID: 8186294359969379574, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186294359969379574, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1083713842127580290, guid: 4574c86e16deff642818332938c8fadf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cef213fd83a576e4d9432e40bb41ae75, type: 3}
 --- !u!224 &3702902722169767850 stripped

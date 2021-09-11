@@ -5,6 +5,45 @@ TextureImporter:
   - first:
       213: -7249095887913011590
     second: mouths_0
+  - first:
+      213: -3697452343217155363
+    second: mouths_1
+  - first:
+      213: -6165010730026846783
+    second: mouths_2
+  - first:
+      213: 4094209503372872208
+    second: mouths_3
+  - first:
+      213: -7020032623463267846
+    second: mouths_4
+  - first:
+      213: 7563025805437170979
+    second: mouths_5
+  - first:
+      213: -1312882593071861462
+    second: mouths_6
+  - first:
+      213: 5981986275573120801
+    second: mouths_7
+  - first:
+      213: 5410146729696585046
+    second: mouths_8
+  - first:
+      213: 1752045823542270277
+    second: mouths_9
+  - first:
+      213: -4326431825156775547
+    second: mouths_10
+  - first:
+      213: -4483862142649179013
+    second: mouths_11
+  - first:
+      213: 5994114911119936363
+    second: mouths_12
+  - first:
+      213: -2485954154974218594
+    second: mouths_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,7 +151,7 @@ TextureImporter:
         width: 197
         height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -120,6 +159,279 @@ TextureImporter:
       bones: []
       spriteID: a76333282b9066b90800000000000000
       internalID: -7249095887913011590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1880
+        width: 180
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd21b9c0fa200bcc0800000000000000
+      internalID: -3697452343217155363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1737
+        width: 242
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c53748976b717aa0800000000000000
+      internalID: -6165010730026846783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1634
+        width: 192
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a819ce9dd81d830800000000000000
+      internalID: 4094209503372872208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_4
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1527
+        width: 116
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af181dec585d39e90800000000000000
+      internalID: -7020032623463267846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1400
+        width: 232
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325f13046e345f860800000000000000
+      internalID: 7563025805437170979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_6
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1270
+        width: 252
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a217820dc34b7cde0800000000000000
+      internalID: -1312882593071861462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_7
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1163
+        width: 199
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f3cced2d8440350800000000000000
+      internalID: 5981986275573120801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1026
+        width: 101
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6556e4659c3b41b40800000000000000
+      internalID: 5410146729696585046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_9
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 892
+        width: 167
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549917ec464805810800000000000000
+      internalID: 1752045823542270277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_10
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 2032
+        width: 230
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581e59c6d2d65f3c0800000000000000
+      internalID: -4326431825156775547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_11
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1878
+        width: 191
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74e295432f16c1c0800000000000000
+      internalID: -4483862142649179013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_12
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 2020
+        width: 210
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b0d24e0cf5f2350800000000000000
+      internalID: 5994114911119936363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouths_13
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1846
+        width: 320
+        height: 135
+      alignment: 9
+      pivot: {x: 0.52889365, y: 0.7910789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96fad00edd108dd0800000000000000
+      internalID: -2485954154974218594
       vertices: []
       indices: 
       edges: []
