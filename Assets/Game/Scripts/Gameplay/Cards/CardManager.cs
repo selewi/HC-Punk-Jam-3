@@ -60,8 +60,7 @@ namespace HCPJ3
                 // Card just been picked up
                 if (!_dragging)
                 {
-                    Debug.Log("CARD PICKED");
-                    //_cardSelected.Raise();
+                    _cardSelected.Raise();
                 }
 
                 _dragging = true;
@@ -73,7 +72,6 @@ namespace HCPJ3
             {
                 _dragging = false;
                 _cardReleased.Raise();
-                Debug.Log("CARD RELEASED");
                 HandleRelease(_cards[_currentCardIndex]);
             }
         }
