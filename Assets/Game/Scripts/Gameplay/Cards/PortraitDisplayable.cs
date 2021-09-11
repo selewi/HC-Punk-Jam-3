@@ -11,9 +11,10 @@ namespace HCPJ3
         [SerializeField] private SpriteRenderer _noseSpriteRenderer = null;
         [SerializeField] private SpriteRenderer _mouthSpriteRenderer = null;
         [SerializeField] private SpriteRenderer _bodySpriteRenderer = null;
+        [SerializeField] private SpriteRenderer _glassesSpriteRenderer = null;
         [SerializeField] private Animator _animator = null;
 
-        public void SetCharacterSprites (Sprite backgroundSprite, Sprite faceShapeSprite, Sprite hairSprite, Sprite eyesSprite, Sprite noseSprite, Sprite mouthSprite, Sprite bodySprite)
+        public void SetCharacterSprites (Sprite backgroundSprite, Sprite faceShapeSprite, Sprite hairSprite, Sprite eyesSprite, Sprite noseSprite, Sprite mouthSprite, Sprite bodySprite, Sprite sunglassesSprite)
         {
             _backgroundSpriteRenderer.sprite = backgroundSprite;
             _faceShapeSpriteRenderer.sprite = faceShapeSprite;
@@ -22,6 +23,7 @@ namespace HCPJ3
             _noseSpriteRenderer.sprite = noseSprite;
             _mouthSpriteRenderer.sprite = mouthSprite;
             _bodySpriteRenderer.sprite = bodySprite;
+            _glassesSpriteRenderer.sprite = sunglassesSprite;
         }
 
         public void RandomizeAnimationStart ()

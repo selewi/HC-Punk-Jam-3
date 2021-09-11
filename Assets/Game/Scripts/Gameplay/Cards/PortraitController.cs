@@ -9,6 +9,7 @@ namespace HCPJ3
         [SerializeField] private Sprite[] _backgroundCollection = { };
         [SerializeField] private Sprite[] _faceShapeCollection = { };
         [SerializeField] private Sprite[] _hairCollection = { };
+        [SerializeField] private Sprite[] _glassesCollection = { };
         [SerializeField] private Sprite[] _eyesCollection = { };
         [SerializeField] private Sprite[] _noseCollection = { };
         [SerializeField] private Sprite[] _mouthCollection = { };
@@ -21,6 +22,7 @@ namespace HCPJ3
         [SerializeField] private Sprite[] _copBodyCollection = { };
         [Space]
         [SerializeField] [Range (0, 1)] private float _showCopClueChance = 0.5f;
+        [SerializeField] [Range (0, 1)] private float _showGlassesChance = 0.15f;
 
         private PortraitDisplayable _displayable;
 
@@ -53,16 +55,19 @@ namespace HCPJ3
                 Initialize ();
             }
 
+            bool showGlasses = Random.value < _showGlassesChance;
+
             _displayable.RandomizeAnimationStart ();
             _displayable.SetCharacterSprites (
                 GetRandomSprite (_backgroundCollection),
                 GetRandomSprite (_faceShapeCollection),
                 GetRandomSprite (Random.value < _showCopClueChance ? _copHairCollection : _hairCollection),
-                GetRandomSprite (Random.value < _showCopClueChance ? _copEyesCollection : _eyesCollection),
+                showGlasses == false ? GetRandomSprite (Random.value < _showCopClueChance ? _copEyesCollection : _eyesCollection) : null,
                 GetRandomSprite (Random.value < _showCopClueChance ? _copNoseCollection : _noseCollection),
                 GetRandomSprite (Random.value < _showCopClueChance ? _copMouthCollection :_mouthCollection),
-                GetRandomSprite (Random.value < _showCopClueChance ? _copBodyCollection : _bodyCollection)
-            ); ;
+                GetRandomSprite (Random.value < _showCopClueChance ? _copBodyCollection : _bodyCollection),
+                showGlasses ? GetRandomSprite (_glassesCollection) : null
+            );
         }
 
         private Sprite GetRandomSprite (Sprite[] spriteArray)
