@@ -63,7 +63,13 @@ namespace HCPJ3
                     description += string.Format ("{0}\n", GetRandomString (_copQuotes));
                 } else
                 {
-                    description += string.Format ("{0}\n", GetRandomString (Random.value < _punkQuoteChance ? _punkQuotes : _mixedQuotes));
+                    if (isCop)
+                    {
+                        description += string.Format ("{0}\n", GetRandomString (_mixedQuotes)); // cops can't say punk quotes kiddo
+                    } else
+                    {
+                        description += string.Format ("{0}\n", GetRandomString (Random.value < _punkQuoteChance ? _punkQuotes : _mixedQuotes));
+                    }
                 }
             }
 
