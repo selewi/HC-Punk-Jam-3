@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
+using HCPJ3.Tools;
 
 namespace HCPJ3
 {
@@ -30,9 +31,18 @@ namespace HCPJ3
         [SerializeField]
         private int _copperChance;
 
+        [Header("Game Events")]
+
+        [SerializeField]
+        private GameEvent _cardSelected;
+
+        [SerializeField]
+        private GameEvent _cardReleased;
+
         private int _currentCardIndex;
         private bool _dragging;
 
+        [HideInInspector]
         public UnityEvent<CardReleaseEventInfo> onCardRelease = null;
 
         public void Initialize()
@@ -47,6 +57,13 @@ namespace HCPJ3
 
             if (Input.GetMouseButton(0))
             {
+                // Card just been picked up
+                if (!_dragging)
+                {
+                    Debug.Log("CARD PICKED");
+                    //_cardSelected.Raise();
+                }
+
                 _dragging = true;
                 Vector2 position = _camera.ScreenToWorldPoint(Input.mousePosition);
                 _cards[_currentCardIndex].transform.position = Vector3.right * Mathf.Lerp (_cards[_currentCardIndex].transform.position.x, position.x, Time.deltaTime * 10.0f);
@@ -55,6 +72,8 @@ namespace HCPJ3
             else if (_dragging)
             {
                 _dragging = false;
+                _cardReleased.Raise();
+                Debug.Log("CARD RELEASED");
                 HandleRelease(_cards[_currentCardIndex]);
             }
         }

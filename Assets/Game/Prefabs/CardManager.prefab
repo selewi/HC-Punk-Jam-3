@@ -45,12 +45,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d55718ba9a99d40bfae02c392d1fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
   _cards:
   - {fileID: 5119234934231476258}
   - {fileID: 6329118263795472705}
+  _gameplayManager: {fileID: 0}
+  _camera: {fileID: 0}
   _borderSize: 500
   _copperChance: 20
+  _cardSelected: {fileID: 11400000, guid: 2633d0b406ebe8f4f95eace819b5e172, type: 2}
+  _cardReleased: {fileID: 11400000, guid: 9326428feae5b1744b6064200dd63ae9, type: 2}
   onCardRelease:
     m_PersistentCalls:
       m_Calls: []
