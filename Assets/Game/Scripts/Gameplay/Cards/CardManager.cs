@@ -40,6 +40,7 @@ namespace HCPJ3
 
         private int _currentCardIndex;
         private bool _dragging;
+        private bool _canDrag = true;
 
         [HideInInspector]
         public UnityEvent<CardReleaseEventInfo> onCardRelease = null;
@@ -54,6 +55,7 @@ namespace HCPJ3
         private void Update()
         {
             if (!_gameplayManager.IsRunning) return;
+            if (_canDrag == false) return;
 
             if (Input.GetMouseButton(0))
             {
@@ -141,9 +143,11 @@ namespace HCPJ3
             }
             else
             {
+                _canDrag = false;
+
                 _cards[_currentCardIndex].transform
                     .DOMoveX (dir == Direction.Right ? 10 : -10, 0.25f)
-                    .OnComplete (DisplayNewCard);
+                    .OnComplete (HandleReleaseAnimationComplete);
 
                 onCardRelease?.Invoke (
                     new CardReleaseEventInfo(
@@ -152,6 +156,11 @@ namespace HCPJ3
                     )
                 );
             }
+        }
+
+        private void HandleReleaseAnimationComplete () {
+            _canDrag = true;
+            DisplayNewCard ();
         }
 
         private Direction GetSwipeDirection(CardController card)
