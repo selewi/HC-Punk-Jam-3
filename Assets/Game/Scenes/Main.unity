@@ -130,13 +130,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8207245973319282434, guid: 3f28d1e4190af3e4193001663cbc1a62, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 8207245974239634627, guid: 3f28d1e4190af3e4193001663cbc1a62, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8207245975050114272, guid: 3f28d1e4190af3e4193001663cbc1a62, type: 3}
       propertyPath: m_Name
       value: ScoreManager
       objectReference: {fileID: 0}
     - target: {fileID: 8207245975050114286, guid: 3f28d1e4190af3e4193001663cbc1a62, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8207245975050114286, guid: 3f28d1e4190af3e4193001663cbc1a62, type: 3}
       propertyPath: m_LocalPosition.x
@@ -178,6 +186,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8207245975050114287, guid: 3f28d1e4190af3e4193001663cbc1a62, type: 3}
+      propertyPath: _audioManager
+      value: 
+      objectReference: {fileID: 1823218141}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f28d1e4190af3e4193001663cbc1a62, type: 3}
 --- !u!114 &446444117 stripped
@@ -548,8 +560,19 @@ Transform:
   - {fileID: 1306992218}
   - {fileID: 780263577}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1823218141 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3546034965471740147, guid: 84c05745b45456141a91cdb06b0d2581, type: 3}
+  m_PrefabInstance: {fileID: 3546034965296932408}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b81315130ad1b429ea2eaab0b24929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1352480894248464276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -563,7 +586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1352480893733703614, guid: 6117c745d36b9f640bd4eb418f3c4d42, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1352480893733703614, guid: 6117c745d36b9f640bd4eb418f3c4d42, type: 3}
       propertyPath: m_LocalPosition.x
@@ -674,6 +697,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3546034965471740147, guid: 84c05745b45456141a91cdb06b0d2581, type: 3}
+      propertyPath: Event
+      value: event:/Music/Song01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84c05745b45456141a91cdb06b0d2581, type: 3}
 --- !u!1001 &3702902721834929048
@@ -689,7 +716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1622982751590636320, guid: d0a16e387040fbb4db54ec523d40b59c, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1806249089779479368, guid: d0a16e387040fbb4db54ec523d40b59c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -733,7 +760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3702902722956310641, guid: d0a16e387040fbb4db54ec523d40b59c, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3702902722956310641, guid: d0a16e387040fbb4db54ec523d40b59c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -843,6 +870,10 @@ PrefabInstance:
       propertyPath: _cardManager
       value: 
       objectReference: {fileID: 665755691}
+    - target: {fileID: 3013776810571120907, guid: 255241b7c1373e841ad7afc185c71c44, type: 3}
+      propertyPath: _audioManager
+      value: 
+      objectReference: {fileID: 1823218141}
     - target: {fileID: 3013776810571120907, guid: 255241b7c1373e841ad7afc185c71c44, type: 3}
       propertyPath: _scoreManager
       value: 

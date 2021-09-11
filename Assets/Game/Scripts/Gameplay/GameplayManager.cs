@@ -16,6 +16,9 @@ namespace HCPJ3
         [Label("UI Manager")]
         private UIManager _uiManager;
 
+        [SerializeField]
+        private AudioManager _audioManager;
+
         [Header("Game Events")]
         [SerializeField]
         private GameEvent _cardSwipeFailPunk;
@@ -54,6 +57,7 @@ namespace HCPJ3
 
         public void StartGame()
         {
+            _audioManager.Initialize();
             _cardManager.Initialize();
             _scoreManager.Initialize();
             _uiManager.Initialize();

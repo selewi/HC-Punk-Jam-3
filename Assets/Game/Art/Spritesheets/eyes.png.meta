@@ -47,6 +47,21 @@ TextureImporter:
   - first:
       213: 2076055774099843377
     second: eyes_14
+  - first:
+      213: -1898312683737091366
+    second: eyes_15
+  - first:
+      213: 9008744045345640920
+    second: eyes_16
+  - first:
+      213: -7114255708500928590
+    second: eyes_17
+  - first:
+      213: -6990840403640849133
+    second: eyes_18
+  - first:
+      213: -2614455040997868253
+    second: eyes_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -174,8 +189,8 @@ TextureImporter:
         y: 1730
         width: 348
         height: 182
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.45043105, y: 0.49712732}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,10 +271,10 @@ TextureImporter:
         serializedVersion: 2
         x: 961
         y: 1846
-        width: 295
-        height: 97
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 307
+        height: 114
+      alignment: 9
+      pivot: {x: 0.43026167, y: 0.23794824}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,10 +290,10 @@ TextureImporter:
       name: eyes_6
       rect:
         serializedVersion: 2
-        x: 1884
-        y: 2003
-        width: 311
-        height: 135
+        x: 1880
+        y: 1979
+        width: 310
+        height: 173
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,12 +311,12 @@ TextureImporter:
       name: eyes_7
       rect:
         serializedVersion: 2
-        x: 486
+        x: 481
         y: 1973
-        width: 353
-        height: 145
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 369
+        height: 132
+      alignment: 9
+      pivot: {x: 0.5014703, y: 0.20965484}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -321,8 +336,8 @@ TextureImporter:
         y: 1823
         width: 353
         height: 120
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5029717, y: 0.24211325}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -342,8 +357,8 @@ TextureImporter:
         y: 1996
         width: 339
         height: 142
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.44636467, y: 0.32927263}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -363,8 +378,8 @@ TextureImporter:
         y: 1957
         width: 455
         height: 127
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5050199, y: 0.36874172}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -380,12 +395,12 @@ TextureImporter:
       name: eyes_11
       rect:
         serializedVersion: 2
-        x: 1353
-        y: 1780
-        width: 442
-        height: 145
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1388
+        y: 1784
+        width: 402
+        height: 135
+      alignment: 9
+      pivot: {x: 0.5052445, y: 0.22411567}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -401,12 +416,12 @@ TextureImporter:
       name: eyes_12
       rect:
         serializedVersion: 2
-        x: 1866
-        y: 1797
-        width: 334
-        height: 156
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1352
+        y: 1634
+        width: 453
+        height: 129
+      alignment: 9
+      pivot: {x: 0.50354034, y: 0.3499033}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -422,12 +437,12 @@ TextureImporter:
       name: eyes_13
       rect:
         serializedVersion: 2
-        x: 1853
-        y: 1552
-        width: 383
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1893
+        y: 1606
+        width: 300
+        height: 163
+      alignment: 9
+      pivot: {x: 0.47037882, y: 0.27647802}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -440,15 +455,120 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: eyes_15
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1678
+        width: 351
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad27b3dfba6d7a5e0800000000000000
+      internalID: -1898312683737091366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes_16
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1480
+        width: 435
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d11e379afc750d70800000000000000
+      internalID: 9008744045345640920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes_17
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1323
+        width: 334
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7d1854026154d90800000000000000
+      internalID: -7114255708500928590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes_18
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1728
+        width: 334
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31de98321bb8bfe90800000000000000
+      internalID: -6990840403640849133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes_19
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1612
+        width: 333
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32db7100ef697bbd0800000000000000
+      internalID: -2614455040997868253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: eyes_14
       rect:
         serializedVersion: 2
-        x: 1900
-        y: 1360
-        width: 300
-        height: 163
+        x: 522
+        y: 1156
+        width: 334
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

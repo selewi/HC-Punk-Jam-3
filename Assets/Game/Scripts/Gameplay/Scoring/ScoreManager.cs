@@ -12,6 +12,9 @@ namespace HCPJ3
         [SerializeField] private int _copFoundScoreGiven = 300;
         [SerializeField] private int _copMissScoreGiven = -150;
 
+        [SerializeField]
+        private AudioManager _audioManager;
+
         private ScoreDisplayable _displayable = null;
 
         public void Initialize ()
@@ -29,6 +32,7 @@ namespace HCPJ3
         {
             _currentScore = Mathf.Max (0, _currentScore + addedScore);
             _displayable.SetValue (_currentScore);
+            _audioManager.SetMusicIntensity(_currentScore);
         }
 
         public void HandleCopFound ()
