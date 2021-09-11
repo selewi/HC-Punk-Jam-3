@@ -40,6 +40,7 @@ namespace HCPJ3
 
         private int _currentCardIndex;
         private bool _dragging;
+        private bool _canDrag = true;
 
         [HideInInspector]
         public UnityEvent<CardReleaseEventInfo> onCardRelease = null;
@@ -54,6 +55,7 @@ namespace HCPJ3
         private void Update()
         {
             if (!_gameplayManager.IsRunning) return;
+            if (_canDrag == false) return;
 
             if (Input.GetMouseButton(0))
             {
@@ -109,7 +111,7 @@ namespace HCPJ3
         {
             foreach (var card in _cards)
             {
-                card.SetDefaultVisualState();
+                card.SetDefaultVisualState(transition: false);
                 card.Randomize (Random.Range (0, 101) <= _copperChance);
             }
         }
@@ -124,6 +126,7 @@ namespace HCPJ3
         {
             card.transform.localPosition = Vector3.zero;
             card.transform.localRotation = Quaternion.identity;
+            card.SetDefaultVisualState (transition: false);
             card.SetSortingOrder (-1);
         }
 
@@ -135,13 +138,16 @@ namespace HCPJ3
                 card.transform.DOMoveX (0, 0.25f);
                 card.transform.DORotate (Vector3.zero, 0.25f);
                 card.SwipeTextController.SetVisibility (0);
+                card.SetDefaultVisualState (transition: true);
                 _cardReleased.Raise();
             }
             else
             {
+                _canDrag = false;
+
                 _cards[_currentCardIndex].transform
                     .DOMoveX (dir == Direction.Right ? 10 : -10, 0.25f)
-                    .OnComplete (DisplayNewCard);
+                    .OnComplete (HandleReleaseAnimationComplete);
 
                 onCardRelease?.Invoke (
                     new CardReleaseEventInfo(
@@ -150,8 +156,11 @@ namespace HCPJ3
                     )
                 );
             }
+        }
 
-            card.SetDefaultVisualState();
+        private void HandleReleaseAnimationComplete () {
+            _canDrag = true;
+            DisplayNewCard ();
         }
 
         private Direction GetSwipeDirection(CardController card)

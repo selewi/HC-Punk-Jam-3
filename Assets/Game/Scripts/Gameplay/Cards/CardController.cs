@@ -32,12 +32,19 @@ namespace HCPJ3
             Outline.SetVisible(false);
         }
 
-        public void SetDefaultVisualState()
+        public void SetDefaultVisualState(bool transition)
         {
             Outline.SetDirection(CardManager.Direction.None);
             Outline.SetVisible(false);
-            scaleTween.Complete ();
-            scaleTween = transform.DOScale(Vector3.one, 0.1f);
+
+            scaleTween?.Complete ();
+            if (transition)
+            {
+                scaleTween = transform.DOScale (Vector3.one, 0.1f);
+            } else
+            {
+                transform.localScale = Vector3.one;
+            }
         }
 
         public void Randomize(bool isDirtyCop)
