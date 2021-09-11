@@ -43,3 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37368719316f8f7449ced3aa2b5676f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cardManager: {fileID: 0}
+  _scoreManager: {fileID: 0}
+  _uiManager: {fileID: 0}
+  _cardSwipeFailPunk: {fileID: 11400000, guid: 080b7a74486f5754ca0a598703d75e39, type: 2}
+  _cardSwipeSuccessPunk: {fileID: 11400000, guid: 3e8b108ec0fa389468fbd383b66a0c11, type: 2}
+  _cardSwipeFailCop: {fileID: 11400000, guid: a2641764b06aa65428acbc62995cbfa7, type: 2}
+  _cardSwipeSuccessCop: {fileID: 11400000, guid: cc3a6870b63d5304192976197a849b21, type: 2}

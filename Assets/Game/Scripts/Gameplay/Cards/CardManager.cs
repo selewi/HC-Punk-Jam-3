@@ -14,7 +14,6 @@ namespace HCPJ3
             Right
         }
 
-
         [SerializeField]
         private CardController[] _cards;
 
@@ -71,7 +70,6 @@ namespace HCPJ3
             else if (_dragging)
             {
                 _dragging = false;
-                _cardReleased.Raise();
                 HandleRelease(_cards[_currentCardIndex]);
             }
         }
@@ -108,6 +106,8 @@ namespace HCPJ3
             {
                 card.transform.DOMoveX (0, 0.25f);
                 card.transform.DORotate (Vector3.zero, 0.25f);
+             
+                _cardReleased.Raise();
             }
             else
             {

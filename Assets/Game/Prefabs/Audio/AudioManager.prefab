@@ -30,6 +30,10 @@ Transform:
   m_Children:
   - {fileID: 8141524037384274912}
   - {fileID: 9142562789484119689}
+  - {fileID: 1616024239551895731}
+  - {fileID: 1616024238731828923}
+  - {fileID: 1616024238190804372}
+  - {fileID: 1616024239513189818}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45,6 +49,318 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30b81315130ad1b429ea2eaab0b24929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &3546034964306822756
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3546034965471740146}
+    m_Modifications:
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: Event
+      value: event:/SFX/UI/Swipe_Punk_True
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385837071706450245, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_Name
+      value: AudioEvent (CardSwipeSuccessPunk)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970411541093048553, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: _event
+      value: 
+      objectReference: {fileID: 11400000, guid: 3e8b108ec0fa389468fbd383b66a0c11, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+--- !u!4 &1616024239513189818 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+  m_PrefabInstance: {fileID: 3546034964306822756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3546034964345414509
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3546034965471740146}
+    m_Modifications:
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: Event
+      value: event:/SFX/UI/Swipe_Cop_Wrong
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385837071706450245, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_Name
+      value: AudioEvent (CardSwipeFailCop)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970411541093048553, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: _event
+      value: 
+      objectReference: {fileID: 11400000, guid: a2641764b06aa65428acbc62995cbfa7, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+--- !u!4 &1616024239551895731 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+  m_PrefabInstance: {fileID: 3546034964345414509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3546034965136090469
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3546034965471740146}
+    m_Modifications:
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: Event
+      value: event:/SFX/UI/Swipe_Punk_Wrong
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385837071706450245, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_Name
+      value: AudioEvent (CardSwipeFailPunk)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970411541093048553, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: _event
+      value: 
+      objectReference: {fileID: 11400000, guid: 080b7a74486f5754ca0a598703d75e39, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+--- !u!4 &1616024238731828923 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+  m_PrefabInstance: {fileID: 3546034965136090469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3546034965668791882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3546034965471740146}
+    m_Modifications:
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: Event
+      value: event:/SFX/UI/Swipe_Cop_True
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385837071706450245, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: m_Name
+      value: AudioEvent (CardSwipeSuccessCop)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970411541093048553, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+      propertyPath: _event
+      value: 
+      objectReference: {fileID: 11400000, guid: cc3a6870b63d5304192976197a849b21, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+--- !u!4 &1616024238190804372 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2835941174131637214, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
+  m_PrefabInstance: {fileID: 3546034965668791882}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6316238558342232126
 PrefabInstance:
   m_ObjectHideFlags: 0

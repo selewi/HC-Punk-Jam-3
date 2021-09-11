@@ -1,4 +1,5 @@
-﻿using NaughtyAttributes;
+﻿using HCPJ3.Tools;
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace HCPJ3
@@ -14,6 +15,19 @@ namespace HCPJ3
         [SerializeField]
         [Label("UI Manager")]
         private UIManager _uiManager;
+
+        [Header("Game Events")]
+        [SerializeField]
+        private GameEvent _cardSwipeFailPunk;
+
+        [SerializeField]
+        private GameEvent _cardSwipeSuccessPunk;
+
+        [SerializeField]
+        private GameEvent _cardSwipeFailCop;
+
+        [SerializeField]
+        private GameEvent _cardSwipeSuccessCop;
 
         public bool IsRunning { get; private set; }
 
@@ -52,18 +66,22 @@ namespace HCPJ3
             {
                 if (eventInfo.SwipeIsCorrect)
                 {
+                    _cardSwipeSuccessCop.Raise();
                     _scoreManager.HandleCopFound ();
                 } else
                 {
+                    _cardSwipeFailCop.Raise();
                     GameOver();
                 }
             } else
             {
                 if (eventInfo.SwipeIsCorrect)
                 {
+                    _cardSwipeSuccessPunk.Raise();
                     _scoreManager.HandlePunkFound ();
                 } else
                 {
+                    _cardSwipeFailPunk.Raise();
                     _scoreManager.HandlePunkMiss ();
                 }
             }
