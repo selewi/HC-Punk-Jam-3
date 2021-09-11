@@ -5,6 +5,9 @@ namespace HCPJ3
 {
     public class CharacterDescriptionController : MonoBehaviour
     {
+        [SerializeField] private string[] _nameCollection = { };
+        [SerializeField] private string[] _surnameCollection = { };
+        [Space]
         [SerializeField] [Range (0, 1)] private float _punkQuoteChance = 0.5f;
         [SerializeField] private string[] _punkQuotes = { };
         [SerializeField] private string[] _copQuotes = { };
@@ -46,6 +49,10 @@ namespace HCPJ3
                 Initialize ();
             }
 
+            // randomize name
+            _displayable.SetName (string.Format ("{0} {1}", GetRandomString (_nameCollection), GetRandomString (_surnameCollection)));
+
+            // randomize description
             string description = string.Empty;
             int copQuoteIndex = isCop ? Random.Range (0, 3) : -1;
 
@@ -53,19 +60,19 @@ namespace HCPJ3
             {
                 if (i == copQuoteIndex)
                 {
-                    description += string.Format ("{0}\n", GetRandomQuote (_copQuotes));
+                    description += string.Format ("{0}\n", GetRandomString (_copQuotes));
                 } else
                 {
-                    description += string.Format ("{0}\n", GetRandomQuote (Random.value < _punkQuoteChance ? _punkQuotes : _mixedQuotes));
+                    description += string.Format ("{0}\n", GetRandomString (Random.value < _punkQuoteChance ? _punkQuotes : _mixedQuotes));
                 }
             }
 
-            _displayable.SetText (description);
+            _displayable.SetDescription (description);
         }
 
-        private string GetRandomQuote (string[] quoteArray)
+        private string GetRandomString (string[] stringArray)
         {
-            return quoteArray[Random.Range (0, quoteArray.Length)];
+            return stringArray[Random.Range (0, stringArray.Length)];
         }
     }
 }
