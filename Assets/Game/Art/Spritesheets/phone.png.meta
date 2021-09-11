@@ -11,6 +11,18 @@ TextureImporter:
   - first:
       213: 345920178342225779
     second: phone_2
+  - first:
+      213: -1144105141512529592
+    second: phone_3
+  - first:
+      213: 130943331869117335
+    second: phone_4
+  - first:
+      213: 2360786837640316319
+    second: phone_5
+  - first:
+      213: 382606192943653955
+    second: phone_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,7 +172,7 @@ TextureImporter:
         width: 362
         height: 1492
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,6 +180,90 @@ TextureImporter:
       bones: []
       spriteID: 3776ab6c194fcc400800000000000000
       internalID: 345920178342225779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_3
+      rect:
+        serializedVersion: 2
+        x: 3223
+        y: 393
+        width: 189
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849927e7f625f10f0800000000000000
+      internalID: -1144105141512529592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_4
+      rect:
+        serializedVersion: 2
+        x: 3202
+        y: 211
+        width: 211
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bc3cd344431d100800000000000000
+      internalID: 130943331869117335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_5
+      rect:
+        serializedVersion: 2
+        x: 3061
+        y: 1432
+        width: 779
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9508ffee1333c020800000000000000
+      internalID: 2360786837640316319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_6
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 828
+        width: 559
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344654b2e4a4f4500800000000000000
+      internalID: 382606192943653955
       vertices: []
       indices: 
       edges: []
