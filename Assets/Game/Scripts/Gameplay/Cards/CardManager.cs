@@ -88,6 +88,7 @@ namespace HCPJ3
             _cardSelected.Raise();
             card.Outline.SetVisible(true);
             card.AnimateOnPick();
+            card.SetSortingOrder(50);
         }
 
         private void RefreshCard(CardController card)
@@ -139,6 +140,7 @@ namespace HCPJ3
                 card.transform.DORotate (Vector3.zero, 0.25f);
                 card.SwipeTextController.SetVisibility (0);
                 card.SetDefaultVisualState (transition: true);
+                card.SetSortingOrder(1);
                 _cardReleased.Raise();
             }
             else
