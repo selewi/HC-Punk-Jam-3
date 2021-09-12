@@ -61,11 +61,11 @@ namespace HCPJ3
             _displayable.SetCharacterSprites (
                 GetRandomSprite (_backgroundCollection),
                 GetRandomSprite (_faceShapeCollection),
-                GetRandomSprite (Random.value < _showCopClueChance ? _copHairCollection : _hairCollection),
+                GetRandomSprite (isCop && Random.value < _showCopClueChance ? _copHairCollection : _hairCollection),
                 showGlasses == false ? GetRandomSprite (Random.value < _showCopClueChance ? _copEyesCollection : _eyesCollection) : null,
-                GetRandomSprite (Random.value < _showCopClueChance ? _copNoseCollection : _noseCollection),
-                GetRandomSprite (Random.value < _showCopClueChance ? _copMouthCollection :_mouthCollection),
-                GetRandomSprite (Random.value < _showCopClueChance ? _copBodyCollection : _bodyCollection),
+                GetRandomSprite (isCop && Random.value < _showCopClueChance ? _copNoseCollection : _noseCollection),
+                GetRandomSprite (isCop && Random.value < _showCopClueChance ? _copMouthCollection :_mouthCollection),
+                GetRandomSprite (isCop && Random.value < _showCopClueChance ? _copBodyCollection : _bodyCollection),
                 showGlasses ? GetRandomSprite (_glassesCollection) : null
             );
         }
