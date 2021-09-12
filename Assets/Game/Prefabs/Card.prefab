@@ -618,7 +618,7 @@ PrefabInstance:
       objectReference: {fileID: -6569823784677960679, guid: 78aad1fbd0f746646b1b95018bdc7ce9, type: 3}
     - target: {fileID: 9215242915284878015, guid: 4af94b893761b444d9d157335d99ff05, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9215242915339614418, guid: 4af94b893761b444d9d157335d99ff05, type: 3}
       propertyPath: m_Sprite
@@ -673,30 +673,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8509713952669103357}
     m_Modifications:
-    - target: {fileID: 3589599672812379021, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
-      propertyPath: _nameCollection.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3589599672812379021, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
-      propertyPath: _nameCollection.Array.data[0]
-      value: Ian
-      objectReference: {fileID: 0}
-    - target: {fileID: 3589599672812379021, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
-      propertyPath: _nameCollection.Array.data[1]
-      value: Ray
-      objectReference: {fileID: 0}
-    - target: {fileID: 3589599672812379021, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
-      propertyPath: _surnameCollection.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3589599672812379021, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
-      propertyPath: _surnameCollection.Array.data[0]
-      value: MacKaye
-      objectReference: {fileID: 0}
-    - target: {fileID: 3589599672812379021, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
-      propertyPath: _surnameCollection.Array.data[1]
-      value: Cappo
-      objectReference: {fileID: 0}
     - target: {fileID: 4667783177680850339, guid: 375e22db45f8f2240bff6bab84394333, type: 3}
       propertyPath: m_RootOrder
       value: 0

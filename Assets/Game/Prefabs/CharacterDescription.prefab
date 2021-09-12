@@ -260,18 +260,143 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10613b1bab45a941bc570bd40f2fa3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nameCollection: []
-  _surnameCollection: []
+  _nameCollection:
+  - Lester
+  - Uncle
+  - Micheal
+  - David
+  - Michel
+  - Densil
+  - Kathleen
+  - Jeremy
+  - Ross
+  - Henry
+  - Pete
+  - Kurt
+  - Dave
+  - Nico
+  - John
+  - Romain
+  - Ron
+  - Perry
+  - Walter
+  - Rosie
+  - Keanu
+  - Violet
+  - Juliet
+  - Carla
+  - Eddy
+  - Sultan
+  - Milton
+  - Donovan
+  - Conan
+  - Kurt
+  - Ray
+  - Ian
+  - Johnyy
+  - Frank
+  - Bob
+  - Arthur
+  _surnameCollection:
+  - Jean
+  - Gibs
+  - Jackson
+  - Gonzalez
+  - Martin
+  - Dilly
+  - Hanna
+  - Bolm
+  - Farrar
+  - Rollins
+  - Strummer
+  - Cobain
+  - Roman
+  - Wilson
+  - Crash
+  - Yang
+  - Gilbert
+  - Smith
+  - White
+  - Dupont
+  - Bowen
+  - Hogg
+  - Nash
+  - Hurst
+  - Mitchel
+  - Cox
+  - Ryder
+  - Stone
+  - Wu
+  - Cappo
+  - MacKeye
+  - Cash
+  - Doom
+  - Burns
+  - Bass
   _punkQuoteChance: 0.25
   _punkQuotes:
-  - PunkQuote_0
-  - PunkQuote_1
+  - 1312
+  - Local band dancer
+  - Hanatarash survivor
+  - Hate5Six cameraman
+  - Average grindcore enjoyer
+  - Black Flag for breakfast
+  - Visit my bandcamp page!
+  - Nailed to the X
+  - D.I.Y
+  - I miss Minor Threat :(
+  - 150 bpm or above
+  - Open up the pit
+  - Make zines
+  - Whoops my anarchy symbol
   _copQuotes:
-  - CopQuote_0
-  - CopQuote_1
+  - Im the 5th lost brother of The Ramones
+  - Donuts fan
+  - Sex Rifles fanatic
+  - Isn't it a bit too loud ?
+  - Pro-consumerist
+  - Pro-corporatism
+  - Can name every song from Guns N' Roses
+  - Medicinal marijuana only
+  - Metallic music is satanic
+  - Blink182 <3 <3 <3
+  - Had tea with Sid Vicious last week
+  - What's with all the shouting?
+  - Ho Hey Let's go!
+  - The Stoojeez were the best
+  - Talking Deads rocks!
+  - Can't stand detuned guitars
   _mixedQuotes:
-  - MixedQuote_0
-  - MixedQuote_1
+  - Number 1 vinyl collector in the zone
+  - I hate cops
+  - Drum player
+  - Guitar player
+  - Bad singer
+  - Like a good old book
+  - Cooking lover
+  - Audiophile
+  - Can pet the dog
+  - My jacket has over 10 patches
+  - Millencolin show was amazing last week!
+  - The new album
+  - NOFX is pretty damn good!
+  - Always down for skating around
+  - Looking for partner for the Rancid show
+  - I used to have a good mohawk back then
+  - I don't care about your opinion
+  - Fuck politicians
+  - I'm too wrecked for shows right now
+  - I'm playing with my band on next Saturday!
+  - Bass player
+  - My band broke up
+  - Never tuned his guitar
+  - one! two! three! four!
+  - Don't drink
+  - Don't smoke
+  - Vegan
+  - Don't do drugs
+  - Anarchy!
+  - Louder please
 --- !u!1 &7708979426946561114
 GameObject:
   m_ObjectHideFlags: 0
