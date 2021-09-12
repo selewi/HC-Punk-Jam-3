@@ -633,7 +633,11 @@ MonoBehaviour:
   _copEyesCollection:
   - {fileID: 3060230111996817670, guid: 75581ce53fdaed84981689396c7c0a9a, type: 3}
   _copNoseCollection:
-  - {fileID: -4228599984819426096, guid: c4f255fd8b85c824a96f845facb32d76, type: 3}
+  - {fileID: 3455096730452978776, guid: c4f255fd8b85c824a96f845facb32d76, type: 3}
+  - {fileID: 4730486500787945238, guid: c4f255fd8b85c824a96f845facb32d76, type: 3}
+  - {fileID: -7904525746788075196, guid: c4f255fd8b85c824a96f845facb32d76, type: 3}
+  - {fileID: 853028775310096819, guid: c4f255fd8b85c824a96f845facb32d76, type: 3}
+  - {fileID: -5152953006753982656, guid: c4f255fd8b85c824a96f845facb32d76, type: 3}
   _copMouthCollection:
   - {fileID: -2485954154974218594, guid: 473b65f6e9475b34a9fe799604228610, type: 3}
   _copBodyCollection:
