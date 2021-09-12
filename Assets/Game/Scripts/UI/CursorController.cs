@@ -18,6 +18,7 @@ namespace HCPJ3
         private void Awake()
         {
             Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Confined;
             _initialRotation = transform.eulerAngles.z;
         }
 
