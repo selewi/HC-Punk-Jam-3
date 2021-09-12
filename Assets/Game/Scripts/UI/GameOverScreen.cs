@@ -1,6 +1,4 @@
-﻿using HCPJ3.Tools;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 namespace HCPJ3
 {
@@ -8,17 +6,6 @@ namespace HCPJ3
     {
         [SerializeField]
         private Canvas _canvas;
-
-        [SerializeField]
-        private Button _restartButton;
-
-        [SerializeField]
-        private GameEvent _restartEvent;
-
-        private void Awake()
-        {
-            _restartButton.onClick.AddListener(_restartEvent.Raise);
-        }
 
         public void Open()
         {

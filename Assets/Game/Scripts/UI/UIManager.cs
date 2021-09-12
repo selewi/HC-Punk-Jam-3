@@ -8,16 +8,6 @@ namespace HCPJ3
         [SerializeField]
         private GameOverScreen _gameOverScreen;
 
-        public void Initialize()
-        {
-            _gameOverScreen.Close();
-        }
-
-        public void GameOver()
-        {
-            _gameOverScreen.Open();
-        }
-
         #region Editor
 
         [Button("Toggle Game Over")]

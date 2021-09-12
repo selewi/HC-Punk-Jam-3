@@ -1,5 +1,4 @@
 ﻿using HCPJ3.Tools;
-using NaughtyAttributes;
 using UnityEngine;
 
 namespace HCPJ3
@@ -11,10 +10,6 @@ namespace HCPJ3
 
         [SerializeField]
         private ScoreManager _scoreManager;
-
-        [SerializeField]
-        [Label("UI Manager")]
-        private UIManager _uiManager;
 
         [SerializeField]
         private AudioManager _audioManager;
@@ -31,6 +26,12 @@ namespace HCPJ3
 
         [SerializeField]
         private GameEvent _cardSwipeSuccessCop;
+
+        [SerializeField]
+        private GameEvent _gameStarted;
+
+        [SerializeField]
+        private GameEvent _gameOver;
 
         [SerializeField]
         private Texture2D _cursorTexture;
@@ -57,7 +58,7 @@ namespace HCPJ3
         private void GameOver()
         {
             IsRunning = false;
-            _uiManager.GameOver();
+            _gameOver.Raise();
         }
 
         public void StartGame()
@@ -65,7 +66,7 @@ namespace HCPJ3
             _audioManager.Initialize();
             _cardManager.Initialize();
             _scoreManager.Initialize();
-            _uiManager.Initialize();
+            _gameStarted.Raise();
             IsRunning = true;
         }
 

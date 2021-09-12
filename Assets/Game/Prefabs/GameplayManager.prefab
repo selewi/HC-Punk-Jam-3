@@ -111,4 +111,6 @@ MonoBehaviour:
   _cardSwipeSuccessPunk: {fileID: 11400000, guid: 3e8b108ec0fa389468fbd383b66a0c11, type: 2}
   _cardSwipeFailCop: {fileID: 11400000, guid: a2641764b06aa65428acbc62995cbfa7, type: 2}
   _cardSwipeSuccessCop: {fileID: 11400000, guid: cc3a6870b63d5304192976197a849b21, type: 2}
+  _gameStarted: {fileID: 11400000, guid: f72f060d814485f4bb5c518993daeed4, type: 2}
+  _gameOver: {fileID: 11400000, guid: fa10b8a7c75a5294b8fc9f55e29ef4d9, type: 2}
   _cursorTexture: {fileID: 2800000, guid: ce08ef9b837fd3445a50de7e989d4c2a, type: 3}
