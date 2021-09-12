@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 
 namespace HCPJ3
 {
@@ -9,6 +10,8 @@ namespace HCPJ3
 
         public void Open()
         {
+            transform.localScale = Vector3.one * 50;
+            transform.DOScale(Vector3.one, 0.3f);
             _canvas.enabled = true;
         }
 

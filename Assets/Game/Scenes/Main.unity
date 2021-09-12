@@ -363,10 +363,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -10
       objectReference: {fileID: 0}
-    - target: {fileID: 7410279014219803222, guid: 89a1867eb7ea1c243ae80e8d692050d3, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -299.94
-      objectReference: {fileID: 0}
     - target: {fileID: 8712701187134538189, guid: 89a1867eb7ea1c243ae80e8d692050d3, type: 3}
       propertyPath: _audioManager
       value: 
