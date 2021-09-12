@@ -37,7 +37,6 @@ namespace HCPJ3
             score = Mathf.Clamp(score, 0, _maxIntensityScore);
             float parameter = ((float) score).Remap(0, _maxIntensityScore, 0, 1);
             _musicInstance.setParameterByName(MusicIntensityParam, parameter);
-            Debug.Log(parameter);
         }
     }
 }
