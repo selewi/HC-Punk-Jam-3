@@ -69,21 +69,21 @@ namespace HCPJ3
             {
                 if (i == copQuoteIndex)
                 {
-                    description += $"{GetRandomQuote(_randomCopQuotes)}\n";
+                    description += $"• {GetRandomQuote(_randomCopQuotes)}\n";
                 } else
                 {
                     if (isCop)
                     {
-                        description += $"{GetRandomQuote(_randomMixedQuotes)}\n"; // cops can't say punk quotes kiddo
+                        description += $"• {GetRandomQuote(_randomMixedQuotes)}\n"; // cops can't say punk quotes kiddo
                     } else
                     {
                         if (Random.value < _punkQuoteChance)
                         {
-                            description += $"{GetRandomQuote(_randomPunkQuotes)}\n";
+                            description += $"• {GetRandomQuote(_randomPunkQuotes)}\n";
                         }
                         else
                         {
-                            description += $"{GetRandomQuote(_randomMixedQuotes)}\n";
+                            description += $"• {GetRandomQuote(_randomMixedQuotes)}\n";
                         }
                     }
                 }
