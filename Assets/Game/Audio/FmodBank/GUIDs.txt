@@ -15,6 +15,7 @@
 {93a85b03-4d90-4e80-981b-e807e7b20d91} event:/SFX/UI/Card_Release
 {65849912-fa04-43bd-a190-c02f8f22bda9} event:/SFX/UI/Card_Swipable
 {33ef51e4-b45a-4534-b8e5-c79f4aed7ebc} event:/SFX/UI/MouseOver
+{fd4ab2f2-2a61-4ecb-b6fe-7a6b6286dbe6} event:/SFX/UI/Restart
 {c78577bc-ba6e-4744-9c83-8917ef63a0a3} event:/SFX/UI/Swipe_Cop_True
 {21c9c592-251c-4fd6-a291-97f33426db81} event:/SFX/UI/Swipe_Cop_Wrong
 {50260adc-f0d7-48b0-b2ef-95169e3cc194} event:/SFX/UI/Swipe_Punk_True
