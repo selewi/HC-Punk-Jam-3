@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using HCPJ3.Tools;
+using UnityEngine;
 using NaughtyAttributes;
 
 namespace HCPJ3
@@ -15,6 +16,10 @@ namespace HCPJ3
 
         private CharacterDescriptionDisplayable _displayable;
 
+        private RandomList<string> _randomPunkQuotes;
+        private RandomList<string> _randomCopQuotes;
+        private RandomList<string> _randomMixedQuotes;
+
         private void Awake ()
         {
             Initialize ();
@@ -23,6 +28,10 @@ namespace HCPJ3
         private void Initialize ()
         {
             _displayable = GetComponentInChildren<CharacterDescriptionDisplayable> ();
+            
+            _randomPunkQuotes = new RandomList<string>(_punkQuotes);
+            _randomCopQuotes = new RandomList<string>(_copQuotes);
+            _randomMixedQuotes = new RandomList<string>(_mixedQuotes);
         }
 
         [Button ("Randomize test (cop)")]
@@ -50,7 +59,7 @@ namespace HCPJ3
             }
 
             // randomize name
-            _displayable.SetName (string.Format ("{0} {1}", GetRandomString (_nameCollection), GetRandomString (_surnameCollection)));
+            _displayable.SetName ($"{GetRandomString(_nameCollection)} {GetRandomString(_surnameCollection)}");
 
             // randomize description
             string description = string.Empty;
@@ -60,20 +69,32 @@ namespace HCPJ3
             {
                 if (i == copQuoteIndex)
                 {
-                    description += string.Format ("{0}\n", GetRandomString (_copQuotes));
+                    description += $"{GetRandomQuote(_randomCopQuotes)}\n";
                 } else
                 {
                     if (isCop)
                     {
-                        description += string.Format ("{0}\n", GetRandomString (_mixedQuotes)); // cops can't say punk quotes kiddo
+                        description += $"{GetRandomQuote(_randomMixedQuotes)}\n"; // cops can't say punk quotes kiddo
                     } else
                     {
-                        description += string.Format ("{0}\n", GetRandomString (Random.value < _punkQuoteChance ? _punkQuotes : _mixedQuotes));
+                        if (Random.value < _punkQuoteChance)
+                        {
+                            description += $"{GetRandomQuote(_randomPunkQuotes)}\n";
+                        }
+                        else
+                        {
+                            description += $"{GetRandomQuote(_randomMixedQuotes)}\n";
+                        }
                     }
                 }
             }
 
             _displayable.SetDescription (description);
+        }
+
+        private string GetRandomQuote(RandomList<string> quotes)
+        {
+            return quotes.Next();
         }
 
         private string GetRandomString (string[] stringArray)

@@ -16,7 +16,6 @@ namespace HCPJ3.Tools.UI
 
         private void OnButtonClicked()
         {
-            Debug.Log("CLICKED");
             _event.Raise();
         }
     }

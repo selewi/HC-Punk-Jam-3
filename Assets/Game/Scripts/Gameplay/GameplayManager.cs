@@ -33,15 +33,7 @@ namespace HCPJ3
         [SerializeField]
         private GameEvent _gameOver;
 
-        [SerializeField]
-        private Texture2D _cursorTexture;
-
         public bool IsRunning { get; private set; }
-
-        private void Awake()
-        {
-            SetCursorSprite();
-        }
 
         private void Start ()
         {
@@ -68,12 +60,6 @@ namespace HCPJ3
             _scoreManager.Initialize();
             _gameStarted.Raise();
             IsRunning = true;
-        }
-
-        private void SetCursorSprite()
-        {
-            Cursor.visible = false;
-            //Cursor.SetCursor(_cursorTexture, Vector2.one, CursorMode.ForceSoftware);
         }
 
         private void HandleCardManagerCardRelease (CardManager.CardReleaseEventInfo eventInfo)

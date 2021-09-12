@@ -17,6 +17,7 @@ namespace HCPJ3
 
         private void Awake()
         {
+            Cursor.visible = false;
             _initialRotation = transform.eulerAngles.z;
         }
 
