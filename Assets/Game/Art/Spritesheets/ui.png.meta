@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 5707218116961789024
     second: ui-cop-badge
+  - first:
+      213: 3556181715638617739
+    second: ui_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,7 +115,7 @@ TextureImporter:
         width: 721
         height: 744
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -120,6 +123,27 @@ TextureImporter:
       bones: []
       spriteID: 0646e25a3ac143f40800000000000000
       internalID: 5707218116961789024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_1
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 367
+        width: 1821
+        height: 1751
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86016dcd681a5130800000000000000
+      internalID: 3556181715638617739
       vertices: []
       indices: 
       edges: []
