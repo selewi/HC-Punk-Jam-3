@@ -80,6 +80,9 @@ TextureImporter:
   - first:
       213: 9161635655533580756
     second: hair_25
+  - first:
+      213: -7283883769400196453
+    second: hair_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -720,6 +723,27 @@ TextureImporter:
       bones: []
       spriteID: 4d1d1a9961ba42f70800000000000000
       internalID: 9161635655533580756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hair_26
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 1111
+        width: 463
+        height: 277
+      alignment: 9
+      pivot: {x: 0.503593, y: 0.24174814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b920babad427aea90800000000000000
+      internalID: -7283883769400196453
       vertices: []
       indices: 
       edges: []

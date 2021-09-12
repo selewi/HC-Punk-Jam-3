@@ -489,8 +489,8 @@ TextureImporter:
         y: 1480
         width: 435
         height: 154
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.51512843, y: 0.2086356}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -528,9 +528,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 938
-        y: 1672
-        width: 364
-        height: 132
+        y: 1728
+        width: 384
+        height: 75
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -548,10 +548,10 @@ TextureImporter:
       name: eyes_19
       rect:
         serializedVersion: 2
-        x: 925
-        y: 1479
-        width: 396
-        height: 148
+        x: 939
+        y: 1524
+        width: 384
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,7 +571,7 @@ TextureImporter:
         serializedVersion: 2
         x: 522
         y: 1156
-        width: 354
+        width: 373
         height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -616,7 +616,7 @@ TextureImporter:
         width: 303
         height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
