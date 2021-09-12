@@ -19,6 +19,8 @@ namespace HCPJ3
 
         private EventInstance _musicInstance;
 
+        private bool _muted;
+
         public void Initialize()
         {
             if (_musicInstance.isValid())
@@ -37,6 +39,12 @@ namespace HCPJ3
             score = Mathf.Clamp(score, 0, _maxIntensityScore);
             float parameter = ((float) score).Remap(0, _maxIntensityScore, 0, 1);
             _musicInstance.setParameterByName(MusicIntensityParam, parameter);
+        }
+
+        public void MuteAll()
+        {
+            _muted = !_muted;
+            RuntimeManager.MuteAllEvents(_muted);
         }
     }
 }
