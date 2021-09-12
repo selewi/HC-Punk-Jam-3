@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78aad1fbd0f746646b1b95018bdc7ce9
+guid: 75581ce53fdaed84981689396c7c0a9a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -34,13 +34,13 @@ TextureImporter:
     second: eyes_9
   - first:
       213: -6323267364357008151
-    second: eyes_10
+    second: glasses1
   - first:
       213: 8681206451255054518
-    second: eyes_11
+    second: glasses2
   - first:
       213: -780200098478068914
-    second: eyes_12
+    second: glasses3
   - first:
       213: 8505275226422966895
     second: eyes_13
@@ -62,6 +62,12 @@ TextureImporter:
   - first:
       213: -2614455040997868253
     second: eyes_19
+  - first:
+      213: -1753807716226972192
+    second: glasses4
+  - first:
+      213: 8362100008717004108
+    second: _yes_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -371,7 +377,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyes_10
+      name: glasses1
       rect:
         serializedVersion: 2
         x: 1355
@@ -392,7 +398,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyes_11
+      name: glasses2
       rect:
         serializedVersion: 2
         x: 1388
@@ -413,7 +419,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eyes_12
+      name: glasses3
       rect:
         serializedVersion: 2
         x: 1352
@@ -437,10 +443,10 @@ TextureImporter:
       name: eyes_13
       rect:
         serializedVersion: 2
-        x: 1893
-        y: 1606
-        width: 300
-        height: 163
+        x: 1863
+        y: 1612
+        width: 330
+        height: 157
       alignment: 9
       pivot: {x: 0.47037882, y: 0.27647802}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,9 +528,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 938
-        y: 1728
-        width: 334
-        height: 76
+        y: 1672
+        width: 364
+        height: 132
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,10 +548,10 @@ TextureImporter:
       name: eyes_19
       rect:
         serializedVersion: 2
-        x: 935
-        y: 1612
-        width: 333
-        height: 86
+        x: 925
+        y: 1479
+        width: 396
+        height: 148
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,7 +571,7 @@ TextureImporter:
         serializedVersion: 2
         x: 522
         y: 1156
-        width: 334
+        width: 354
         height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -576,6 +582,48 @@ TextureImporter:
       bones: []
       spriteID: 139ae152ab1afcc10800000000000000
       internalID: 2076055774099843377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glasses4
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 1467
+        width: 446
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5c3f59c2939a7e0800000000000000
+      internalID: -1753807716226972192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _yes_1
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1049
+        width: 303
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d2ed357a52c0470800000000000000
+      internalID: 8362100008717004108
       vertices: []
       indices: 
       edges: []
