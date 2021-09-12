@@ -97,7 +97,7 @@ namespace HCPJ3
                 } else
                 {
                     _cardSwipeFailPunk.Raise();
-                    _scoreManager.HandlePunkMiss ();
+                    GameOver();
                 }
             }
         }
