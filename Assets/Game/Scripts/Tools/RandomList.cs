@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using HCPJ3.Tools.Extensions;
 
 namespace HCPJ3.Tools
 {
@@ -35,13 +36,7 @@ namespace HCPJ3.Tools
         private void Reset()
         {
             _index = 0;
-            Shuffle();
-        }
-
-        private void Shuffle()
-        {
-            System.Random r = new System.Random();
-            _items.Sort((x, y) => r.Next(-1, 1));
+            _items.Shuffle();
         }
     }
 }
