@@ -72,7 +72,8 @@ namespace HCPJ3
 
         private void SetCursorSprite()
         {
-            Cursor.SetCursor(_cursorTexture, Vector2.one, CursorMode.ForceSoftware);
+            Cursor.visible = false;
+            //Cursor.SetCursor(_cursorTexture, Vector2.one, CursorMode.ForceSoftware);
         }
 
         private void HandleCardManagerCardRelease (CardManager.CardReleaseEventInfo eventInfo)

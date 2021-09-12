@@ -21,6 +21,7 @@ namespace HCPJ3
         {
             _currentScore = 0;
             _displayable = GetComponentInChildren<ScoreDisplayable> ();
+            _displayable.SetValue(_currentScore);
         }
 
         private void Start ()
