@@ -6,16 +6,16 @@ namespace HCPJ3
     public class CharacterDescriptionDisplayable : MonoBehaviour
     {
         [SerializeField] private TextMeshPro _nameTMP = null;
-        [SerializeField] private TextMeshPro _descriptionTMP = null;
+        [SerializeField] private TextMeshPro[] _descriptionTMP = null;
 
         public void SetName (string newText)
         {
             _nameTMP.text = newText;
         }
 
-        public void SetDescription (string newText)
+        public void SetDescription (string newText, int line)
         {
-            _descriptionTMP.text = newText;
+            _descriptionTMP[line].text = newText;
         }
     }
 }

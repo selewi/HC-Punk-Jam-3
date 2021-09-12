@@ -62,34 +62,34 @@ namespace HCPJ3
             _displayable.SetName ($"{GetRandomString(_nameCollection)} {GetRandomString(_surnameCollection)}");
 
             // randomize description
-            string description = string.Empty;
             int copQuoteIndex = isCop ? Random.Range (0, 3) : -1;
 
             for (int i = 0; i < 3; i++)
             {
+                string description = string.Empty;
                 if (i == copQuoteIndex)
                 {
-                    description += $"• {GetRandomQuote(_randomCopQuotes)}\n";
+                    description = $"{GetRandomQuote(_randomCopQuotes)}";
                 } else
                 {
                     if (isCop)
                     {
-                        description += $"• {GetRandomQuote(_randomMixedQuotes)}\n"; // cops can't say punk quotes kiddo
+                        description = $"{GetRandomQuote(_randomMixedQuotes)}"; // cops can't say punk quotes kiddo
                     } else
                     {
                         if (Random.value < _punkQuoteChance)
                         {
-                            description += $"• {GetRandomQuote(_randomPunkQuotes)}\n";
+                            description = $"{GetRandomQuote(_randomPunkQuotes)}";
                         }
                         else
                         {
-                            description += $"• {GetRandomQuote(_randomMixedQuotes)}\n";
+                            description = $"{GetRandomQuote(_randomMixedQuotes)}";
                         }
                     }
                 }
-            }
 
-            _displayable.SetDescription (description);
+                _displayable.SetDescription (description, i);
+            }
         }
 
         private string GetRandomQuote(RandomList<string> quotes)
