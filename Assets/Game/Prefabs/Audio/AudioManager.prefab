@@ -379,7 +379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
       propertyPath: Event
-      value: event:/SFX/UI/Swipe_Punk_Wrong
+      value: event:/SFX/UI/Busted
       objectReference: {fileID: 0}
     - target: {fileID: 2871503880382421428, guid: 2c37f29f2b567f24aa4bd0ac0bdbf307, type: 3}
       propertyPath: OverrideMaxDistance
