@@ -44,7 +44,7 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 480
   defaultScreenHeight: 800
-  defaultScreenWidthWeb: 480
+  defaultScreenWidthWeb: 600
   defaultScreenHeightWeb: 800
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0

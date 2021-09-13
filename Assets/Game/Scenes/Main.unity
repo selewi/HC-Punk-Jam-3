@@ -161,30 +161,6 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 3786796016781268608, guid: 89a1867eb7ea1c243ae80e8d692050d3, type: 3}
   m_PrefabInstance: {fileID: 651972100173285289}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1161518379 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3546034965471740145, guid: 84c05745b45456141a91cdb06b0d2581, type: 3}
-  m_PrefabInstance: {fileID: 3546034965296932408}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1161518380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161518379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadEvent: 1
-  UnloadEvent: 0
-  Banks:
-  - Master
-  - Master.strings
-  CollisionTag: 
-  PreloadSamples: 0
 --- !u!1 &1318365917
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +270,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3546034965471740147, guid: 84c05745b45456141a91cdb06b0d2581, type: 3}
   m_PrefabInstance: {fileID: 3546034965296932408}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161518379}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30b81315130ad1b429ea2eaab0b24929, type: 3}
@@ -329,7 +305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 651972100343243197, guid: 89a1867eb7ea1c243ae80e8d692050d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 651972100343243197, guid: 89a1867eb7ea1c243ae80e8d692050d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -451,10 +427,6 @@ PrefabInstance:
     - target: {fileID: 3546034965471740147, guid: 84c05745b45456141a91cdb06b0d2581, type: 3}
       propertyPath: Event
       value: event:/Music/Song01
-      objectReference: {fileID: 0}
-    - target: {fileID: 3546034965471740147, guid: 84c05745b45456141a91cdb06b0d2581, type: 3}
-      propertyPath: _maxIntensityScore
-      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 6331694265208804710, guid: 84c05745b45456141a91cdb06b0d2581, type: 3}
       propertyPath: m_Enabled
