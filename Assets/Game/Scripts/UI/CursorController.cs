@@ -13,11 +13,19 @@ namespace HCPJ3
         [SerializeField]
         private float _rotationSpeed = 10;
 
+        [SerializeField]
+        private Texture2D _systemCursorTexture;
+
         private float _initialRotation;
 
         private void Awake()
         {
             Cursor.visible = false;
+
+#if UNITY_WEBGL
+            Cursor.SetCursor(_systemCursorTexture, Vector2.zero, CursorMode.ForceSoftware);
+#endif
+
             Cursor.lockState = CursorLockMode.Confined;
             _initialRotation = transform.eulerAngles.z;
         }

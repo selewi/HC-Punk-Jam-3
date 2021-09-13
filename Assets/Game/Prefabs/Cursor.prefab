@@ -47,6 +47,7 @@ MonoBehaviour:
   _camera: {fileID: 0}
   _rotationOnClick: 5
   _rotationSpeed: 30
+  _systemCursorTexture: {fileID: 2800000, guid: d0ee66becbd78f14daf7efae40b1cc36, type: 3}
 --- !u!1 &8655977722015950218
 GameObject:
   m_ObjectHideFlags: 0
