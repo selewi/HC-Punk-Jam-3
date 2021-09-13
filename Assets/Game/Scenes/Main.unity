@@ -690,6 +690,22 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 1318365919}
+    - target: {fileID: 8655977720165975310, guid: 8e0e18115910e1747b8436e672f6dcaf, type: 3}
+      propertyPath: _hotspot.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655977720165975310, guid: 8e0e18115910e1747b8436e672f6dcaf, type: 3}
+      propertyPath: _hotspot.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655977720165975310, guid: 8e0e18115910e1747b8436e672f6dcaf, type: 3}
+      propertyPath: _systemCursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: ce08ef9b837fd3445a50de7e989d4c2a, type: 3}
+    - target: {fileID: 8655977722015950218, guid: 8e0e18115910e1747b8436e672f6dcaf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8655977722015950219, guid: 8e0e18115910e1747b8436e672f6dcaf, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.42
